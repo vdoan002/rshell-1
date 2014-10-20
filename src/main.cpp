@@ -32,10 +32,17 @@ int main(int argc, char* argv[]) {
 		getline(cin, userInput);
 
 		//Parse the input add store in vector
-      tokenizer<> tok(userInput);
-      for(tokenizer<>::iterator beg=tok.begin(); beg!=tok.end();++beg)
+		typedef tokenizer< char_separator<char> > 
+    		tokenizer;
+  		char_separator<char> sep(" ");
+ 		tokenizer tokens(userInput, sep);
+
+      //tokenizer<> tok(userInput);
+      //for(tokenizer<>::iterator beg=tok.begin(); beg!=tok.end();++beg)
+		for (tokenizer::iterator tok_iter = tokens.begin();
+      		 tok_iter != tokens.end(); ++tok_iter)
       {
-         inputVector.push_back(*beg);
+         inputVector.push_back(*tok_iter);
 			//cout << *beg << "\n";         
       }
 
