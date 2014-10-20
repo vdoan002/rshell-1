@@ -46,15 +46,52 @@ int main(int argc, char* argv[]) {
 			//cout << *beg << "\n";         
       }
 
-		//Test to see whats in the vector
-		while(inputVector.size()!= 0){
+		/*Test to see whats in the vector
+		while(inputVector.size()!= 0)
+		{
 			cout << inputVector.back() << endl;
 			inputVector.pop_back();
-		}
-		
-      //if(-1 == execvp(argv[1], argv)) 
-      //   perror("There was an error in execvp. ");
+		} 
 
+		*/
+		//start loading inputVector into argv...
+		int count = 0;
+		for (vector<string>::iterator it = inputVector.begin() ; it != inputVector.end(); ++it)
+		{
+			string s = *it;
+			//check to see if || or && connector
+			//if((s.at(0) == "|") || s.at(0) == "&")
+			//{
+				
+			//}
+			char *str = new char[s.length()+1];
+			strcpy(str, s.c_str());
+			argv[count] = str;
+			++count;
+		}
+		argv[count] = NULL;	 
+		  
+
+      /*-------------------------------------------------
+		string s = "ls";
+		char *str = new char[3];
+		strcpy(str,s.c_str());
+		string x = "-a";
+		char *str1 = new char[3];
+		strcpy(str1,x.c_str());
+
+		argv[0] = str;
+		argv[1] = str1;
+		argv[2] = NULL;
+      if(-1 == execvp(argv[0], argv)) 
+         perror("There was an error in execvp. ");
+
+	
+		//-------------------------------------------------
+      */
+	
+      if(-1 == execvp(argv[0], argv)) 
+         perror("There was an error in execvp. ");
 
       exit(1); 
    }
