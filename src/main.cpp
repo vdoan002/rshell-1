@@ -25,12 +25,34 @@ int main(int argc, char* argv[]) {
    {
 		//variables
       string userInput;
+		string modUserInput;
+		//string modifiedUserInput;
       vector<string> inputVector;
-
+		vector<int> semiPos;
 		//prompt for user input
       cout << "$$ ";
 		getline(cin, userInput);
-
+		//put space before semi-colons
+		for(int i = 0; i < userInput.length();++i)
+		{
+			//modifiedUserInput.insert(i,userInput.at(i));
+			if(userInput.at(i) == ';')
+			{
+				semiPos.push_back(i);
+				//userInput.insert(i," "); 
+			}
+		}
+		modUserInput = userInput;
+		int pos = 0;
+		while(!semiPos.empty())
+		{
+			pos = semiPos.back();
+			modUserInput.insert(pos," ");
+			semiPos.pop_back();
+		}
+		//convert back
+		userInput = modUserInput;	
+		
 		//Parse the input add store in vector
 		typedef tokenizer< char_separator<char> > 
     		tokenizer;
@@ -54,22 +76,48 @@ int main(int argc, char* argv[]) {
 		} 
 
 		*/
-		//start loading inputVector into argv...
+		vector<int> connectors;
+		//start loading inputVector into argv 
 		int count = 0;
 		for (vector<string>::iterator it = inputVector.begin() ; it != inputVector.end(); ++it)
 		{
 			string s = *it;
-			//check to see if || or && connector
-			//if((s.at(0) == "|") || s.at(0) == "&")
-			//{
-				
-			//}
 			char *str = new char[s.length()+1];
 			strcpy(str, s.c_str());
 			argv[count] = str;
+			//delete [] str;
 			++count;
 		}
 		argv[count] = NULL;	 
+		//go through and look for connectors 
+		for(unsigned i = 0; i < count; ++i)
+		{
+			//found a connector!
+			if((string(argv[i]) == "||") || (string(argv[i]) == "&&"))// || string(argv[i]).back() == ";"
+			{
+				connectors.push_back(i);
+			}
+		}
+
+	   //	cout <<connectors.size()<<endl;
+		
+
+
+		/*		int pid2 = fork();
+				if(pid2 == -1)//fork’s return value for an error is -1
+  				{
+      			perror("There was an error with fork(). ");
+      			exit(1);//there was an error with fork
+   			}
+   			else if(pid2 == 0)//child
+				{
+					
+				}else if(pid2 > 0) //parent
+				{
+					if( -1 == wait(0)) //wait for the child process to finish
+     	 			perror("There was an error with wait().");
+				}
+		*/
 		  
 
       /*-------------------------------------------------
