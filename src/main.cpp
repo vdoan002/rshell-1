@@ -36,14 +36,14 @@ int main(int argc, char* argv[]) {
 		//pwd || cd ; ls
 		string str;
 		int count = 0;
-		bool found = false;
+		//bool found = false;
 		for (vector<string>::iterator it = inputVector.begin() ; it != inputVector.end(); ++it)
  		{
 			//found connector
 			if(*it == "&&" || *it == ";")
 			{
 				execute(str);
-				found = true;
+				//found = true;
 				str="";
 				++it;
 				//cout << "hi";
@@ -51,11 +51,11 @@ int main(int argc, char* argv[]) {
  			str += *it;
 			str += " ";
     	}
-		if(found == false)
-		{
+		//if(found == false)
+		//{
 			//cout << "hey";
 			execute(str);
-		}
+		//}
 	main(argc, argv);
 	return 0;
 }
