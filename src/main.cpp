@@ -40,10 +40,14 @@ int main(int argc, char* argv[]) {
 		for (vector<string>::iterator it = inputVector.begin() ; it != inputVector.end(); ++it)
  		{
 			//found connector
-			if(*it == "&&" || *it == ";")
+			if(*it == "&&" || *it == ";" || *it == "||")
 			{
 				execute(str);
 				//found = true;
+				if(*it == "||")
+				{
+					main(argc, argv);
+				}
 				str="";
 				++it;
 				//cout << "hi";
