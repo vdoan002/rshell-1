@@ -15,7 +15,7 @@ All other bugs and fixes can be sent to amyll001@ucr.edu
 Reported bugs/fixes will be submitted to correction.
 
 File List
-====
+----
 
 ```
 .:
@@ -39,10 +39,10 @@ main.cpp
 ./tests
 ```
 How to run file
-====
+----
 Once you have cloned the directory to your local machine, 
-follow the directoins below:
-====
+Follow the directions below:
+----
 1. `cd` into rshell directory
 2. Call `make`
 3. `cd` into `bin`
@@ -53,7 +53,7 @@ RShell will now open up instead of BASH and you can execute many of
 the commands as included in the regular terminal.
 
 Program reviewd by the University of California, Riverside.
-====
+----
 Basic overview of Command Shells: HERE
 
 This program is developed to write a simple command shell called "RShell"
