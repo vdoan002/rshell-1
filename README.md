@@ -54,13 +54,15 @@ the commands as included in the regular terminal.
 
 Program reviewd by the University of California, Riverside.
 ----
-Basic overview of Command Shells: HERE
+Basic overview of Command Shells: [HERE](http://linuxgazette.net/111/ramankutty.html)
 
 This program is developed to write a simple command shell called "RShell"
-*It will offer similarities such as the normal BASH command shell.
-*Execute the command of ls to a file (with given instructions above)
-*Can call all commands of BASH with execvp function
-*Have special built in command "exit" to exit RSHELL and return to your local SHELL
+* It will offer similarities such as the normal BASH command shell.
+* Execute the command of ls to a file (with given instructions above)
+* Can call all commands of BASH with execvp function
+* Have special built in command "exit" to exit RSHELL and return to your local SHELL
 
 BUGS
-====
+----
+
+
