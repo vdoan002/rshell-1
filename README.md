@@ -77,6 +77,7 @@ BUGS
 ----
 1. if you use the `||` connector then only the commands before it will execute regardless if they fail or not
 2. If you use the `;` connector and don't follow it up with a command then it will cause a segmentation fault.
-3. Must format the connectors: no space before semi-colon and yes space after, space before and after `||` and `&&` connector. If not then command will fail.
-4. If only enter a connector with no commands program will segfault.
+3. Must format the connectors: weird spacing might cause program to fail
+4. If only enter a connector with no commands program may segfault.
 5. Cant use the exit command with a connector.
+6. Cant use the exit command with a comment.

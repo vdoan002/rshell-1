@@ -1,66 +1,78 @@
-Script started on Tue 21 Oct 2014 10:42:49 PM PDT
+Script started on Tue 21 Oct 2014 11:13:44 PM PDT
 ]0;atte@atte-MacBookPro: ~/Desktop/cs100/rshellatte@atte-MacBookPro:~/Desktop/cs100/rshell$ make
 if [ ! -d "./bin" ];\
 		then mkdir bin;\
 		fi		
 g++ -Wall -Werror -ansi -pedantic src/main.cpp -o bin/rshell
-]0;atte@atte-MacBookPro: ~/Desktop/cs100/rshellatte@atte-MacBookPro:~/Desktop/cs100/rshell$ bin/rshell
+]0;atte@atte-MacBookPro: ~/Desktop/cs100/rshellatte@atte-MacBookPro:~/Desktop/cs100/rshell$ rshell/[K[K[K[K[K[K[Kbin.[K/rshell
+$ 
+$ #comment
 $ ls
-bin  exec  LICENSE  Makefile  README.md  src  tests
-$ ls #comentnen ls-a   -a shouldnt work
-bin  exec  LICENSE  Makefile  README.md  src  tests
-$ ls -s a # flags and comments
-.  ..  bin  exec  .git	LICENSE  Makefile  README.md  src  tests
-$ ls; pwd
-bin  exec  LICENSE  Makefile  README.md  src  tests
+bin  exec.script  LICENSE  Makefile  README.md	src  tests
+$ ls #with comment
+bin  exec.script  LICENSE  Makefile  README.md	src  tests
+$ ls#no space on comment
+bin  exec.script  LICENSE  Makefile  README.md	src  tests
+$ ls -a #flagy
+.  ..  bin  exec.script  .git  LICENSE	Makefile  README.md  src  tests
+$ ls -a -l #,r  more flags
+total 36
+drwxrwxr-x 6 atte atte 4096 Oct 21 23:13 .
+drwxrwxr-x 3 atte atte 4096 Oct 19 13:52 ..
+drwxrwxr-x 2 atte atte 4096 Oct 21 23:13 bin
+-rw-rw-r-- 1 atte atte    0 Oct 21 23:13 exec.script
+drwxrwxr-x 8 atte atte 4096 Oct 21 23:00 .git
+-rw-rw-r-- 1 atte atte   97 Oct 21 15:42 LICENSE
+-rw-rw-r-- 1 atte atte  206 Oct 21 22:59 Makefile
+-rw-rw-r-- 1 atte atte 2114 Oct 21 23:00 README.md
+drwxrwxr-x 2 atte atte 4096 Oct 21 22:06 src
+drwxrwxr-x 2 atte atte 4096 Oct 21 22:50 tests
+$ ls -a; pwd #semi connector
+.  ..  bin  exec.script  .git  LICENSE	Makefile  README.md  src  tests
 /home/atte/Desktop/cs100/rshell
-$ ls;
-bin  exec  LICENSE  Makefile  README.md  src  tests
+$ ;
 Segmentation fault (core dumped)
 ]0;atte@atte-MacBookPro: ~/Desktop/cs100/rshellatte@atte-MacBookPro:~/Desktop/cs100/rshell$ bin/rshell
-$ ls  asdf #random command
+$ ls -a && pwd #and connector
+.  ..  bin  exec.script  .git  LICENSE	Makefile  README.md  src  tests
+/home/atte/Desktop/cs100/rshell
+$ ls -a || echo hello 3 o   #or connector
+.  ..  bin  exec.script  .git  LICENSE	Makefile  README.md  src  tests
+$ cd \ || ls #failed or connector
 There was an error in execvp. : No such file or directory
-$ cd
+$ ls ; pwd #weird t spacing
+bin  exec.script  LICENSE  Makefile  README.md	src  tests
+/home/atte/Desktop/cs100/rshell
+$                     pwd #white space
+/home/atte/Desktop/cs100/rshell
+$ #comentsfordays
+$ ls||ls#more wierd ap  spacing
 There was an error in execvp. : No such file or directory
-$ pwd; [wd   pwd; ls $$  && pwd; ls
-/home/atte/Desktop/cs100/rshell
-/home/atte/Desktop/cs100/rshell
-bin  exec  LICENSE  Makefile  README.md  src  tests
-/home/atte/Desktop/cs100/rshell
-bin  exec  LICENSE  Makefile  README.md  src  tests
-$ echo hello && ls 
-hello
-bin  exec  LICENSE  Makefile  README.md  src  tests
-$ echo hello || pwd
-hello
-$ ls  exit
-]0;atte@atte-MacBookPro: ~/Desktop/cs100/rshellatte@atte-MacBookPro:~/Desktop/cs100/rshell$ bin/rshell
-$ ls -a -f
-tests  LICENSE	Makefile  src  .git  bin  .  exec  README.md  ..
-$ cd && ls
+$ ##double hash?
 There was an error in execvp. : No such file or directory
-bin  exec  LICENSE  Makefile  README.md  src  tests
-$ #dfadfadfsd
-$ 
-$ 
-$ dfa
-There was an error in execvp. : No such file or directory
-$ ls && pwd && pwd $  ; lsl ; echo hello #u bunc of     h oc f commands!
-bin  exec  LICENSE  Makefile  README.md  src  tests
+$ ls; pwd $ && ls -a &&echo       echo hello world; ls || pwd #big leagues
+bin  exec.script  LICENSE  Makefile  README.md	src  tests
 /home/atte/Desktop/cs100/rshell
-/home/atte/Desktop/cs100/rshell
-bin  exec  LICENSE  Makefile  README.md  src  tests
-hello
-$ ; &&
+.  ..  bin  exec.script  .git  LICENSE	Makefile  README.md  src  tests
+hello world
+bin  exec.script  LICENSE  Makefile  README.md	src  tests
+$ echo hi#with comment
+hi
+$ ls &&
+bin  exec.script  LICENSE  Makefile  README.md	src  tests
 Segmentation fault (core dumped)
 ]0;atte@atte-MacBookPro: ~/Desktop/cs100/rshellatte@atte-MacBookPro:~/Desktop/cs100/rshell$ bin/rshell
-$        ls
-bin  exec  LICENSE  Makefile  README.md  src  tests
-$       ;s  ls || cd #im o    think we managed to get all the cases
-bin  exec  LICENSE  Makefile  README.md  src  tests
+$ ||
+$ ||
+$ &&
+Segmentation fault (core dumped)
+]0;atte@atte-MacBookPro: ~/Desktop/cs100/rshellatte@atte-MacBookPro:~/Desktop/cs100/rshell$ bin/rshell
 $ clear
-[H[2J$ exit
+[H[2J$ #good stuff
+$ exit ## with coment   ment
+There was an error in execvp. : No such file or directory
+$ exit
 ]0;atte@atte-MacBookPro: ~/Desktop/cs100/rshellatte@atte-MacBookPro:~/Desktop/cs100/rshell$ exit
 exit
 
-Script done on Tue 21 Oct 2014 10:48:21 PM PDT
+Script done on Tue 21 Oct 2014 11:19:55 PM PDT
