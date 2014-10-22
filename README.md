@@ -3,9 +3,6 @@ RSHELL
 
 Licensing Information: READ LICENSE
 ---
-Project source can be downloaded from https://github.com/amyll001/rshell.git
-----
-
 Author and contributor List
 ----
 Atte Myllykoski
@@ -40,18 +37,30 @@ main.cpp
 ```
 How to run file
 ----
-Once you have cloned the directory to your local machine, 
-Follow the directions below:
-----
-1. `cd` into rshell directory
-2. Call `make`
-3. `cd` into `bin`
-4. Call `rshell`
-5. Can do steps 3 & 4 by calling bin/rshell
+To download and run RSHELL enter the following into your terminal
+```
+$ git clone http://github.com/amyll001/rshell.git
+$ cd rshell
+$ git checkout hw0
+$ make
+$ bin/rshell
+```
 
 RShell will now open up instead of BASH and you can execute many of
 the commands as included in the regular terminal.
 
+The connecter is an optional way you can run multiple commands at once. If a command is followed by ;, then the nextcommand is always executed; if a command is followed by &&, then the next command is executed only if the first one succeeds; if a command is followed by ||, then the next command is executed only if the first one fails
+
+**Example**
+```
+$ ls -a
+$ echo hello
+$ mkdir test
+```
+is equivalent to: 
+```
+$ ls -a; echo hello; mkdir test
+```
 Program reviewd by the University of California, Riverside.
 ----
 Basic overview of Command Shells: [HERE](http://linuxgazette.net/111/ramankutty.html)
@@ -64,5 +73,8 @@ This program is developed to write a simple command shell called "RShell"
 
 BUGS
 ----
-
-
+1. if you use the `||` connector then only the commands before it will execute regardless if they fail or not
+2. If you use the `;` connector and don't follow it up with a command then it will cause a segmentation fault.
+3. Must format the connectors: no space before semi-colon and yes space after, space before and after `||` and `&&` connector. If not then command will fail.
+4. If only enter a connector with no commands program will segfault.
+5. Cant use the exit command with a connector.
