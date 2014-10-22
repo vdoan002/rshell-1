@@ -34,6 +34,8 @@ main.cpp
 ```
 ```
 ./tests
+
+exec.script
 ```
 How to run file
 ----
