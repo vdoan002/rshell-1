@@ -1,0 +1,66 @@
+Script started on Tue 21 Oct 2014 10:42:49 PM PDT
+]0;atte@atte-MacBookPro: ~/Desktop/cs100/rshellatte@atte-MacBookPro:~/Desktop/cs100/rshell$ make
+if [ ! -d "./bin" ];\
+		then mkdir bin;\
+		fi		
+g++ -Wall -Werror -ansi -pedantic src/main.cpp -o bin/rshell
+]0;atte@atte-MacBookPro: ~/Desktop/cs100/rshellatte@atte-MacBookPro:~/Desktop/cs100/rshell$ bin/rshell
+$ ls
+bin  exec  LICENSE  Makefile  README.md  src  tests
+$ ls #comentnen ls-a   -a shouldnt work
+bin  exec  LICENSE  Makefile  README.md  src  tests
+$ ls -s a # flags and comments
+.  ..  bin  exec  .git	LICENSE  Makefile  README.md  src  tests
+$ ls; pwd
+bin  exec  LICENSE  Makefile  README.md  src  tests
+/home/atte/Desktop/cs100/rshell
+$ ls;
+bin  exec  LICENSE  Makefile  README.md  src  tests
+Segmentation fault (core dumped)
+]0;atte@atte-MacBookPro: ~/Desktop/cs100/rshellatte@atte-MacBookPro:~/Desktop/cs100/rshell$ bin/rshell
+$ ls  asdf #random command
+There was an error in execvp. : No such file or directory
+$ cd
+There was an error in execvp. : No such file or directory
+$ pwd; [wd   pwd; ls $$  && pwd; ls
+/home/atte/Desktop/cs100/rshell
+/home/atte/Desktop/cs100/rshell
+bin  exec  LICENSE  Makefile  README.md  src  tests
+/home/atte/Desktop/cs100/rshell
+bin  exec  LICENSE  Makefile  README.md  src  tests
+$ echo hello && ls 
+hello
+bin  exec  LICENSE  Makefile  README.md  src  tests
+$ echo hello || pwd
+hello
+$ ls  exit
+]0;atte@atte-MacBookPro: ~/Desktop/cs100/rshellatte@atte-MacBookPro:~/Desktop/cs100/rshell$ bin/rshell
+$ ls -a -f
+tests  LICENSE	Makefile  src  .git  bin  .  exec  README.md  ..
+$ cd && ls
+There was an error in execvp. : No such file or directory
+bin  exec  LICENSE  Makefile  README.md  src  tests
+$ #dfadfadfsd
+$ 
+$ 
+$ dfa
+There was an error in execvp. : No such file or directory
+$ ls && pwd && pwd $  ; lsl ; echo hello #u bunc of     h oc f commands!
+bin  exec  LICENSE  Makefile  README.md  src  tests
+/home/atte/Desktop/cs100/rshell
+/home/atte/Desktop/cs100/rshell
+bin  exec  LICENSE  Makefile  README.md  src  tests
+hello
+$ ; &&
+Segmentation fault (core dumped)
+]0;atte@atte-MacBookPro: ~/Desktop/cs100/rshellatte@atte-MacBookPro:~/Desktop/cs100/rshell$ bin/rshell
+$        ls
+bin  exec  LICENSE  Makefile  README.md  src  tests
+$       ;s  ls || cd #im o    think we managed to get all the cases
+bin  exec  LICENSE  Makefile  README.md  src  tests
+$ clear
+[H[2J$ exit
+]0;atte@atte-MacBookPro: ~/Desktop/cs100/rshellatte@atte-MacBookPro:~/Desktop/cs100/rshell$ exit
+exit
+
+Script done on Tue 21 Oct 2014 10:48:21 PM PDT
