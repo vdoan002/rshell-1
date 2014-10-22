@@ -12,13 +12,20 @@
 using namespace std;
 using namespace boost;
 
+//functions()
 string getInput();
 vector<string> parse(string userInput);
 void printVectorBackwards(vector<string> a);
 vector<char*> parseArg(vector<string> inputVector);
 void execute(string str);
+void myMain();
 
 int main(int argc, char* argv[]) {
+	myMain();
+	return 0;
+}
+
+void myMain() {
 
 		//get user input
 		string userInput = getInput();
@@ -30,23 +37,17 @@ int main(int argc, char* argv[]) {
 		vector<string> inputVector = parse(userInput);	
 
 		//make sure vector has the right content
-		//printVectorBackwards(inputVector);
-		//vector<char*> argVect;
-   	//argVect = parseArg(inputVector);
 		//pwd || cd ; ls
 		string str;
-		int count = 0;
 		//bool found = false;
 		for (vector<string>::iterator it = inputVector.begin() ; it != inputVector.end(); ++it)
  		{
-			//found connector
 			if(*it == "&&" || *it == ";" || *it == "||")
 			{
 				execute(str);
-				//found = true;
 				if(*it == "||")
 				{
-					main(argc, argv);
+					myMain();
 				}
 				str="";
 				++it;
@@ -55,13 +56,11 @@ int main(int argc, char* argv[]) {
  			str += *it;
 			str += " ";
     	}
-		//if(found == false)
-		//{
-			//cout << "hey";
-			execute(str);
-		//}
-	main(argc, argv);
-	return 0;
+		
+		execute(str);
+
+		myMain();
+		return;
 }
 
 string getInput(){
@@ -79,7 +78,7 @@ string getInput(){
 
 	bool hash = false;
 	//put space before semi-colons and get rid of #
-	for(int i = 0; i < input.length(); ++i)
+	for(unsigned i = 0; i < input.length(); ++i)
 	{
 		if(input.at(i) == ';' && hash == false)
 		{
@@ -144,7 +143,6 @@ void printVectorBackwards(vector<string> a){
 }
 
 vector<char*> parseArg(vector<string> inputVector){
-	int count = 0;
 	vector<char*>argVect;
 	//start loading inputVector into argv type array 
 	for (vector<string>::iterator it = inputVector.begin() ; it != inputVector.end(); ++it)
@@ -189,7 +187,10 @@ void execute(string str){
    else if(pid > 0) //parent function
    {
       if( -1 == wait(0)) //wait for the child process to finish
-     	 	perror("There was an error with wait().");
+     	{
+	 		perror("There was an error with wait().");
+			exit(1);
+		}
 	//	cout << "This is the parent process! " << endl;
 		return;
    }
