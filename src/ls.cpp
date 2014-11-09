@@ -30,6 +30,22 @@ void flag_a(int, char**);
 void flag_l(int, char**);
 void print_l(string);
 
+//Helper function and struct to ignore case sensitive
+struct case_insensitive_less : public std::binary_function< char,char,bool >
+{
+    bool operator () (char x, char y) const
+    {
+        return toupper( static_cast< unsigned char >(x)) < 
+               toupper( static_cast< unsigned char >(y));
+    }
+};
+bool NoCaseLess(const std::string &a, const std::string &b)
+{
+	return std::lexicographical_compare( a.begin(),a.end(),
+   b.begin(),b.end(), case_insensitive_less() );
+}
+
+
 int main (int argc, char** argv) {
 
 	//check argv for flags
@@ -79,20 +95,24 @@ int flagCheck(int argCount, char** argVect) {
 }
 
 void flag_no(int argCount, char** argVect) {
-	if( argCount > 2 )
+		if( argCount == 1 )
 		{		
-			cout << "Invalid expression" << endl;
-			exit(1);
-		}	
-		else if( argCount == 2 )
-		{
-			listContent(argVect[1]);
-		}	
-		else
-		{
 			string pathToDir = ".";
-			listContent(pathToDir);
-		}
+			listContent(pathToDir);		
+		}	
+		else if( argCount > 1 )
+		{
+			int i = 1;
+			while (i < argCount)
+			{
+				if(argCount > 2)
+					cout << argVect[i] << ":" << endl;
+				listContent(argVect[i]);
+				if((i+1) != argCount)
+					cout << endl;
+				++i;
+			}
+		}	
 		return;
 }
 
@@ -113,7 +133,7 @@ void listAllContent(string pathToDir) {
 				longestString = currentString;
   		}
 		//alpha sort
-		sort(input.begin(),input.end());
+		sort(input.begin(),input.end(),NoCaseLess);
 		reverse(input.begin(),input.end());
 		//print out vector
 		int spacing = 0;
@@ -155,7 +175,7 @@ void listContent(string pathToDir) {
 			}
   		}
 		//alpha sort
-		sort(input.begin(),input.end());
+		sort(input.begin(),input.end(),NoCaseLess);
 		reverse(input.begin(),input.end());
 
 		//print out vector
@@ -230,6 +250,7 @@ void flag_l(int argCount, char** argVect) {
 		DIR *dir;
 		struct dirent *ent;
 		vector<string>input;
+		//cout << "h";
 		if ((dir = opendir(".")) != NULL) 
 		{
   			// put files and directories into vector
@@ -239,9 +260,15 @@ void flag_l(int argCount, char** argVect) {
     				input.push_back(ent->d_name);
   			}
 			//alpha sort in reverse
-			sort(input.begin(),input.end());
+			sort(input.begin(),input.end(), NoCaseLess);
 			reverse(input.begin(), input.end());
 		}
+   	else 
+		{
+  			perror ("There was an error with readdir() ");
+  			exit(1);
+		}
+
 		string curString;
 		while (!input.empty())
 		{	
@@ -261,27 +288,33 @@ void flag_l(int argCount, char** argVect) {
 		DIR *dir;
 		struct dirent *ent;
 		vector<string>input;
+		//cout << argVect[path];
 		if ((dir = opendir(argVect[path])) != NULL) 
 		{
   			// put files and directories into vector
   			while ((ent = readdir (dir)) != NULL)
 			{	
-    			input.push_back(ent->d_name);
+				if(ent->d_name[0] != '.')
+    				input.push_back(ent->d_name);
   			}
 			//alpha sort in reverse
-			sort(input.begin(),input.end());
+			sort(input.begin(),input.end(),NoCaseLess);
 			reverse(input.begin(), input.end());
 			string curString;
+			string curPath;
 			while (!input.empty())
 			{		
-				curString = input.back();
-				print_l(curString);			
+				curPath = argVect[path];
+				curString = "/";
+				curString += input.back();
+				curPath += curString;
+				//cout << curPath;
+				print_l(curPath);			
 				input.pop_back();
 				cout << endl;
 			}
 			closedir (dir);
-		}	
-		else 
+		}else 
 		{
   			perror ("There was an error with readdir() ");
   			exit(1);
@@ -293,6 +326,8 @@ void print_l(string cur) {
 	struct stat sb;
 	struct passwd *pwd;
 	struct group *grp;
+	unsigned found = cur.find_last_of("/\\");
+//	cerr << cur;
 	if (stat(cur.c_str(), &sb) == -1) 
 	{
    	perror("stat");
@@ -317,11 +352,11 @@ void print_l(string cur) {
       cout << " " << grp->gr_name;
    else
 		cout << " " << sb.st_gid;
-   cout << " " << sb.st_size;
+   cout << " " << setw(5) << right << sb.st_size;
 	string time = ctime(&sb.st_mtime);
 	cout << " " << time.substr(4,3) << flush;	
 	cout << " " << time.substr(8,2) << flush;
 	cout << " " << time.substr(11,5) << flush;
-	cout << " " << cur;
+	cout << " " << cur.substr(found+1);
 }
 
