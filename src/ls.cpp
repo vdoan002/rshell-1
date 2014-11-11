@@ -32,7 +32,11 @@ void print_l(string);
 void flag_al(int, char**);
 void flag_r(int, char **);
 void flag_ar(int, char**);
+void flag_lr(int, char**);
+void flag_alr(int, char**);
 void recurse_List(string);
+void recurse_lList(string);
+void recurse_alList(string);
 void recurse_allList(string);
 int isDirectory(const char*);
 //Helper function and struct to ignore case sensitive
@@ -89,12 +93,12 @@ int main (int argc, char** argv) {
 	//-lR
 	else if(flags == 6)
 	{
-
+		flag_lr(argc, argv);
 	}
 	//-alR
 	else if (flags == 7)
 	{
-
+		flag_alr(argc, argv);
 	}else
 		cout << "I don't know how you managed to get this message to appear.." << endl;
 	return 0;
@@ -632,14 +636,13 @@ void recurse_allList(string pathToDir) {
        // put files and directories into vector
        while ((ent = readdir (dir)) != NULL)
        {
-			if(ent->d_name[0] != '.')
+			if((ent->d_name[0] != '.' || ent->d_name[1] != '.')&&(ent->d_name[0] != '.' || ent->d_name[1] != '\0'))
          {
 				string newPath = pathToDir + '/';
 				newPath += ent->d_name;
             input.push_back(newPath);
 			}
 		 }
-				 //cout <<input.back() << endl;
        //alpha sort
        sort(input.begin(),input.end(),NoCaseLess);
        reverse(input.begin(),input.end());
@@ -664,5 +667,211 @@ void recurse_allList(string pathToDir) {
 	
 }
 
+void flag_lr(int argCount, char** argVect) {
 
+	int path = 0;
+	for( unsigned i = 1; i < argCount; ++i )
+	{
+		if( argVect[i][0] != '-')
+		{
+			path = i;
+			break;
+		}
+		if( argVect[i][1] != 'R' && argVect[i][1] != 'l')
+		{
+			cout << "Invalid expression" << endl;
+			exit(1);
+		}
+	}	
+	if( path == 0 )
+	{
+		string pathToDir = ".";
+		cout << pathToDir << ":" << endl;
+		recurse_lList(pathToDir);
+	}
+	else
+	{
+		//cout << "hi";
+		int i = path;
+		while (i < argCount)
+		{
+			if(path != (argCount -1))
+				cout << argVect[i] << ":" << endl;
+			recurse_lList(argVect[i]);
+			if((i+1) != argCount)
+				cout << endl;
+			++i;
+		}
+	}
 
+}
+
+void recurse_lList(string pathToDir) {
+	 DIR *dir;
+    struct dirent *ent;
+    vector<string>input1;
+    if ((dir = opendir (pathToDir.c_str())) != NULL)
+    {
+       // put files and directories into vector
+       while ((ent = readdir (dir)) != NULL)
+       {
+          if(ent->d_name[0] != '.')
+          {
+				 string newPath = pathToDir + '/';
+				 newPath += ent->d_name;
+             input1.push_back(newPath);
+				 //cout <<input.back() << endl;
+          }
+       }
+       //alpha sort
+       sort(input1.begin(),input1.end(),NoCaseLess);
+       reverse(input1.begin(),input1.end());
+	 }
+
+	   string curString;
+		while (!input1.empty())
+		{	
+			curString = input1.back();
+			print_l(curString);			
+			input1.pop_back();
+			cout << endl;
+		}
+	// DIR *dir;
+    //struct dirent *ent;
+    vector<string>input;
+    if ((dir = opendir (pathToDir.c_str())) != NULL)
+    {
+       // put files and directories into vector
+       while ((ent = readdir (dir)) != NULL)
+       {
+          if(ent->d_name[0] != '.')
+          {
+				 string newPath = pathToDir + '/';
+				 newPath += ent->d_name;
+             input.push_back(newPath);
+				 //cout <<input.back() << endl;
+          }
+       }
+       //alpha sort
+       sort(input.begin(),input.end(),NoCaseLess);
+       reverse(input.begin(),input.end());
+		 struct stat sb;
+		 if (stat(pathToDir.c_str(), &sb) == -1) 
+		 {
+       	perror("stat");
+        	exit(1);
+       }
+
+       while(!input.empty())
+       {
+			 if(isDirectory(input.back().c_str()))
+          {
+				 cout << endl;
+				 cout << input.back() << ":" << endl;
+             recurse_lList(input.back());
+          }
+          input.pop_back();
+       }
+   }
+	return;
+	
+}
+
+void flag_alr(int argCount, char** argVect) {
+	int path = 0;
+	for( unsigned i = 1; i < argCount; ++i )
+	{
+		if( argVect[i][0] != '-')
+		{
+			path = i;
+			break;
+		}
+		if( argVect[i][1] != 'R' && argVect[i][1] != 'l' && argVect[i][1] != 'a')
+		{
+			cout << "Invalid expression" << endl;
+			exit(1);
+		}
+	}	
+	if( path == 0 )
+	{
+		string pathToDir = ".";
+		cout << pathToDir << ":" << endl;
+		recurse_alList(pathToDir);
+	}
+	else
+	{
+		int i = path;
+		while (i < argCount)
+		{
+			if(path != (argCount -1))
+				cout << argVect[i] << ":" << endl;
+			recurse_alList(argVect[i]);
+			if((i+1) != argCount)
+				cout << endl;
+			++i;
+		}
+	}
+}
+
+void recurse_alList(string pathToDir) {
+	 DIR *dir;
+    struct dirent *ent;
+    vector<string>input1;
+    if ((dir = opendir (pathToDir.c_str())) != NULL)
+    {
+       // put files and directories into vector
+       while ((ent = readdir (dir)) != NULL)
+       {
+		 		string newPath = pathToDir + '/';
+				newPath += ent->d_name;
+            input1.push_back(newPath);
+       }
+       //alpha sort
+       sort(input1.begin(),input1.end(),NoCaseLess);
+       reverse(input1.begin(),input1.end());
+	 }
+
+	   string curString;
+		while (!input1.empty())
+		{	
+			curString = input1.back();
+			print_l(curString);			
+			input1.pop_back();
+			cout << endl;
+		}
+    vector<string>input;
+    if ((dir = opendir (pathToDir.c_str())) != NULL)
+    {
+       // put files and directories into vector
+       while ((ent = readdir (dir)) != NULL)
+       {
+          if((ent->d_name[0] != '.' || ent->d_name[1] != '.')&&(ent->d_name[0] != '.' || ent->d_name[1] != '\0'))
+          {
+				 string newPath = pathToDir + '/';
+				 newPath += ent->d_name;
+             input.push_back(newPath);
+          }
+       }
+       //alpha sort
+       sort(input.begin(),input.end(),NoCaseLess);
+       reverse(input.begin(),input.end());
+		 struct stat sb;
+		 if (stat(pathToDir.c_str(), &sb) == -1) 
+		 {
+       	perror("stat");
+        	exit(1);
+       }
+
+       while(!input.empty())
+       {
+			 if(isDirectory(input.back().c_str()))
+          {
+				 cout << endl;
+				 cout << input.back() << ":" << endl;
+             recurse_alList(input.back());
+          }
+          input.pop_back();
+       }
+   }
+	return;
+}
