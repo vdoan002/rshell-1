@@ -306,7 +306,6 @@ void flag_l(int argCount, char** argVect) {
   			perror ("There was an error with readdir() ");
   			exit(1);
 		}
-
 		string curString;
 		while (!input.empty())
 		{	
@@ -323,8 +322,9 @@ void flag_l(int argCount, char** argVect) {
 		while (i < argCount)
 		{
 			if(path != (argCount -1))
+			{
 				cout << argVect[i] << ":" << endl;
-			//listAllContent(argVect[i]);
+			}
 			DIR *dir;
 			struct dirent *ent;
 			vector<string>input;
@@ -376,6 +376,7 @@ void print_l(string cur) {
    	perror("stat");
       exit(1);
    }
+   //cout << "total " << sb.st_blocks << endl;
 	//printf( (S_ISDIR(sb.st_mode)) ? "d" : "-");
 	if(S_ISDIR(sb.st_mode))
 	{
@@ -394,7 +395,7 @@ void print_l(string cur) {
    printf( (sb.st_mode & S_IROTH) ? "r" : "-");
    printf( (sb.st_mode & S_IWOTH) ? "w" : "-");
    printf( (sb.st_mode & S_IXOTH) ? "x" : "-");
-	cout << " " << sb.st_nlink;
+	cout  << " " << setw(3) << left << sb.st_nlink;
  	if ((pwd = getpwuid(sb.st_uid)) != NULL)
    	cout << " " << pwd->pw_name;
    else
@@ -403,7 +404,7 @@ void print_l(string cur) {
       cout << " " << grp->gr_name;
    else
 		cout << " " << sb.st_gid;
-   cout << " " << setw(5) << right << sb.st_size;
+   cout << " "  << setw(7) << right << sb.st_size;
 	string time = ctime(&sb.st_mtime);
 	cout << " " << time.substr(4,3) << flush;	
 	cout << " " << time.substr(8,2) << flush;
