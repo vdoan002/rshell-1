@@ -11,32 +11,6 @@ All other bugs and fixes can be sent to amyll001@ucr.edu
 
 Reported bugs/fixes will be submitted to correction.
 
-File List
-----
-
-```
-.:
-
-Makefile
-
-LICENSE
-
-README.md
-
-./src
-
-./tests
-```
-```
-/src:
-
-main.cpp
-```
-```
-./tests
-
-exec.script
-```
 How to run file
 ----
 To download and run RSHELL enter the following into your terminal
