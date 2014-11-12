@@ -289,7 +289,6 @@ void flag_l(int argCount, char** argVect) {
 		DIR *dir;
 		struct dirent *ent;
 		vector<string>input;
-		//cout << "h";
 		if ((dir = opendir(".")) != NULL) 
 		{
   			// put files and directories into vector
@@ -372,13 +371,20 @@ void print_l(string cur) {
 	struct passwd *pwd;
 	struct group *grp;
 	unsigned found = cur.find_last_of("/\\");
-//	cerr << cur;
-	if (stat(cur.c_str(), &sb) == -1) 
+	if (lstat(cur.c_str(), &sb) == -1) 
 	{
    	perror("stat");
       exit(1);
    }
-	printf( (S_ISDIR(sb.st_mode)) ? "d" : "-");
+	//printf( (S_ISDIR(sb.st_mode)) ? "d" : "-");
+	if(S_ISDIR(sb.st_mode))
+	{
+		cout << "d";
+	}else if(S_ISLNK(sb.st_mode))//system link
+	{
+		cout << "s";
+	}else
+		cout << "-";
 	printf( (sb.st_mode & S_IRUSR) ? "r" : "-");
    printf( (sb.st_mode & S_IWUSR) ? "w" : "-");
    printf( (sb.st_mode & S_IXUSR) ? "x" : "-");
@@ -403,6 +409,10 @@ void print_l(string cur) {
 	cout << " " << time.substr(8,2) << flush;
 	cout << " " << time.substr(11,5) << flush;
 	cout << " " << cur.substr(found+1);
+	if(S_ISLNK(sb.st_mode))
+	{
+		cout << " -> ";
+	}
 }
 void flag_al(int argCount, char** argVect) {
 	int path = 0;
