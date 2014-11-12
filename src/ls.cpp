@@ -107,7 +107,7 @@ int main (int argc, char** argv) {
 //function definitions
 int flagCheck(int argCount, char** argVect) {
 	int flags = 0;
-	for( unsigned i = 1; i < argCount; i++ )
+	for( int i = 1; i < argCount; i++ )
 	{
 		//Don't continue check if first param not flag
 		if( argVect[1][0] != '-' )
@@ -236,7 +236,7 @@ void listContent(string pathToDir) {
 void flag_a(int argCount, char** argVect) {
 	
 	int path = 0;
-	for( unsigned i = 1; i < argCount; ++i )
+	for( int i = 1; i < argCount; ++i )
 	{
 		if( argVect[i][0] != '-')
 		{
@@ -271,7 +271,7 @@ void flag_a(int argCount, char** argVect) {
 
 void flag_l(int argCount, char** argVect) {
 	int path = 0;
-	for( unsigned i = 1; i < argCount; ++i )
+	for( int i = 1; i < argCount; ++i )
 	{
 		if( argVect[i][0] != '-')
 		{
@@ -417,7 +417,7 @@ void print_l(string cur) {
 }
 void flag_al(int argCount, char** argVect) {
 	int path = 0;
-	for( unsigned i = 1; i < argCount; ++i )
+	for( int i = 1; i < argCount; ++i )
 	{
 		if( argVect[i][0] != '-')
 		{
@@ -513,7 +513,7 @@ void flag_al(int argCount, char** argVect) {
 
 void flag_r(int argCount, char** argVect) {
 	int path = 0;
-	for( unsigned i = 1; i < argCount; ++i )
+	for( int i = 1; i < argCount; ++i )
 	{
 		if( argVect[i][0] != '-')
 		{
@@ -601,7 +601,7 @@ int isDirectory(const char *path)
 
 void flag_ar(int argCount, char** argVect){
 	int path = 0;
-	for( unsigned i = 1; i < argCount; ++i )
+	for( int i = 1; i < argCount; ++i )
 	{
 		if( argVect[i][0] != '-')
 		{
@@ -681,7 +681,7 @@ void recurse_allList(string pathToDir) {
 void flag_lr(int argCount, char** argVect) {
 
 	int path = 0;
-	for( unsigned i = 1; i < argCount; ++i )
+	for( int i = 1; i < argCount; ++i )
 	{
 		if( argVect[i][0] != '-')
 		{
@@ -790,7 +790,7 @@ void recurse_lList(string pathToDir) {
 
 void flag_alr(int argCount, char** argVect) {
 	int path = 0;
-	for( unsigned i = 1; i < argCount; ++i )
+	for( int i = 1; i < argCount; ++i )
 	{
 		if( argVect[i][0] != '-')
 		{
