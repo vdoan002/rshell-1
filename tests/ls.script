@@ -1,0 +1,2460 @@
+Script started on Tue 11 Nov 2014 10:00:59 PM PST
+~
+amyll001@hammer $ cd css[K100
+~/cs100
+amyll001@hammer $ ls
+[0m[38;5;27mlab2[0m/  [38;5;27mlab5[0m/  [38;5;27mrshell[0m/  [38;5;27mrshell-1[0m/
+[m~/cs100
+amyll001@hammer $ cd rshell
+~/cs100/rshell
+amyll001@hammer $ ls
+[0m[38;5;27mbin[0m/  LICENSE  Makefile  README.md  [38;5;27msrc[0m/  [38;5;27mtests[0m/
+[m~/cs100/rshell
+amyll001@hammer $ cd bin
+~/cs100/rshell/bin
+amyll001@hammer $ ls
+[0m[38;5;34mlsk[0m*  ls.script
+[m~/cs100/rshell/bin
+amyll001@hammer $ lsk
+ls.script  lsk        
+~/cs100/rshell/bin
+amyll001@hammer $ ls
+[0m[38;5;34mlsk[0m*  ls.script
+[m~/cs100/rshell/bin
+amyll001@hammer $ lsk
+ls.script  lsk        
+~/cs100/rshell/bin
+amyll001@hammer $ lsk 0a[K[K-a
+.          ..         ls.script  lsk        
+~/cs100/rshell/bin
+amyll001@hammer $ lsk -R
+.:
+ls.script  lsk        
+
+~/cs100/rshell/bin
+amyll001@hammer $ lsk -l
+-rw------- 1   amyll001 csmajs       0 Nov 11 22:00 ls.script
+-rwx------ 1   amyll001 csmajs   59551 Nov 11 21:39 lsk
+~/cs100/rshell/bin
+amyll001@hammer $ lsk /hom[K[K[K[K[K[K[K[Kpwd
+/home/csmajs/amyll001/cs100/rshell/bin
+~/cs100/rshell/bin
+amyll001@hammer $ lsk /home
+csmajs  
+~/cs100/rshell/bin
+amyll001@hammer $ lsk '[K/home .[K/home/csmajs
+/home:
+csmajs  
+
+/home/csmajs:
+There was an error with readdir() : Permission denied
+~/cs100/rshell/bin
+amyll001@hammer $ lsk /home /home/csmajs/amyll001
+/home:
+csmajs  
+
+/home/csmajs/amyll001:
+assembly01                assignments-backup3wPJyh  assignments-backupecOrwk  assignments-backupneuFqB  
+atteResume.odt            cs100                     Desktop                   Documents                 
+Downloads                 function.cpp              install                   lab1                      
+lab2                      lab5                      Music                     oddInt.cpp                
+Pictures                  Public                    sdl                       shell                     
+switch.cpp                Templates                 tmpFf_cDy                 ucr-cs100                 
+Videos                    vimrc                     
+~/cs100/rshell/bin
+amyll001@hammer $ lsk /home /home/csmajs/amyll001 -a
+/home:
+csmajs  
+
+/home/csmajs/amyll001:
+assembly01                assignments-backup3wPJyh  assignments-backupecOrwk  assignments-backupneuFqB  
+atteResume.odt            cs100                     Desktop                   Documents                 
+Downloads                 function.cpp              install                   lab1                      
+lab2                      lab5                      Music                     oddInt.cpp                
+Pictures                  Public                    sdl                       shell                     
+switch.cpp                Templates                 tmpFf_cDy                 ucr-cs100                 
+Videos                    vimrc                     
+
+-a:
+There was an error with readdir() : No such file or directory
+~/cs100/rshell/bin
+amyll001@hammer $ lsk /home /home/csmajs/amyll001 -a[K[K[C[4h [4l[4h-[4l[4ha[4l[4hr[4l[1P[4hR[4l
+/home:
+csmajs  
+
+-aR:
+There was an error with readdir() : No such file or directory
+~/cs100/rshell/bin
+amyll001@hammer $ lsk /home -aR /home/csmajs/amyll001 [C[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csadf
+/home:
+csmajs  
+
+/home/csmajs/amyll001:
+assembly01                assignments-backup3wPJyh  assignments-backupecOrwk  assignments-backupneuFqB  
+atteResume.odt            cs100                     Desktop                   Documents                 
+Downloads                 function.cpp              install                   lab1                      
+lab2                      lab5                      Music                     oddInt.cpp                
+Pictures                  Public                    sdl                       shell                     
+switch.cpp                Templates                 tmpFf_cDy                 ucr-cs100                 
+Videos                    vimrc                     
+
+sadf:
+There was an error with readdir() : No such file or directory
+~/cs100/rshell/bin
+amyll001@hammer $ lsk [K[K[K[Klsk /home  /home/csmajs/amyll001 sadf[C[K[K[K[K[1P[1P[1P[1P[1P[1P[4h-[4l[4ha[4l
+.                                         ..                                        .adobe                                    .bashrc                                   
+.bash_history                             .bash_logout                              .cache                                    .config                                   
+.dbus                                     .DCOPserver_well.cs.ucr.edu_localhost:12  .DCOPserver_well.cs.ucr.edu_localhost:13  .DCOPserver_well.cs.ucr.edu_localhost:14  
+.DCOPserver_well.cs.ucr.edu_localhost:15  .DCOPserver_well.cs.ucr.edu_localhost:16  .DCOPserver_well.cs.ucr.edu_localhost:22  .DCOPserver_well.cs.ucr.edu_localhost:24  
+.DCOPserver_well.cs.ucr.edu_localhost:25  .DCOPserver_well.cs.ucr.edu_localhost:35  .DCOPserver_well.cs.ucr.edu_localhost_12  .DCOPserver_well.cs.ucr.edu_localhost_13  
+.DCOPserver_well.cs.ucr.edu_localhost_14  .DCOPserver_well.cs.ucr.edu_localhost_15  .DCOPserver_well.cs.ucr.edu_localhost_16  .DCOPserver_well.cs.ucr.edu_localhost_22  
+.DCOPserver_well.cs.ucr.edu_localhost_24  .DCOPserver_well.cs.ucr.edu_localhost_25  .DCOPserver_well.cs.ucr.edu_localhost_35  .dmrc                                     
+.eggcups                                  .execooo1zKihb                            .execooodevr2g                            .execoooe4AYhb                            
+.execoooeO6pQg                            .execoooGDLZo8                            .execoooqRmQRB                            .execoooVFWde8                            
+.fontconfig                               .gconf                                    .gconfd                                   .gnome                                    
+.gnome2                                   .gnome2_private                           .gnote                                    .gnupg                                    
+.goutputstream-01ORDX                     .goutputstream-1KVIDX                     .goutputstream-1ZVKEX                     .goutputstream-4V1ODX                     
+.goutputstream-6DKFDX                     .goutputstream-6JXMDX                     .goutputstream-AYSFDX                     .goutputstream-C39HDX                     
+.goutputstream-F3LQDX                     .goutputstream-F6CFDX                     .goutputstream-FZHCDX                     .goutputstream-GK2PDX                     
+.goutputstream-IZPDDX                     .goutputstream-JMJMDX                     .goutputstream-K0BOEX                     .goutputstream-K5EQDX                     
+.goutputstream-KA6PDX                     .goutputstream-OOLTDX                     .goutputstream-QWFQDX                     .goutputstream-SGB9CX                     
+.goutputstream-XIDJDX                     .goutputstream-YQCRDX                     .gstreamer-0.10                           .gtk-bookmarks                            
+.gtkrc-1.2-gnome2                         .gvfs                                     .ICEauthority                             .imsettings.log                           
+.kde                                      .local                                    .macromedia                               .metacity                                 
+.mozilla                                  .nautilus                                 .nv                                       .openoffice.org                           
+.pki                                      .procmailrc                               .profile                                  .pulse                                    
+.pulse-cookie                             .qt                                       .recently-used.xbel                       .redhat                                   
+.ssh                                      .Trash                                    .vim                                      .viminfo                                  
+.Xauthority                               .xsession-errors                          .xsession-errors.old                      assembly01                                
+assignments-backup3wPJyh                  assignments-backupecOrwk                  assignments-backupneuFqB                  atteResume.odt                            
+cs100                                     Desktop                                   Documents                                 Downloads                                 
+function.cpp                              install                                   lab1                                      lab2                                      
+lab5                                      Music                                     oddInt.cpp                                Pictures                                  
+Public                                    sdl                                       shell                                     switch.cpp                                
+Templates                                 tmpFf_cDy                                 ucr-cs100                                 Videos                                    
+vimrc                                     
+~/cs100/rshell/bin
+amyll001@hammer $ [Kamyll001@hammer $ [Kamyll001@hammer $ [Kamyll001@hammer $ [Kamyll001@hammer $ [Kamyll001@hammer $ [Kamyll001@hammer $ [Kamyll001@hammer $ [Kamyll001@hammer $ [Kamyll001@hammer $ [Kamyll001@hammer $ [Kamyll001@hammer $ [Kamyll001@hammer $ [Kamyll001@hammer $ [Kamyll001@hammer $ [Kamyll001@hammer $ [Kamyll001@hammer $ [Kamyll001@hammer $ [Kamyll001@hammer $ [Kamyll001@hammer $ [Kamyll001@hammer $ [Kamyll001@hammer $ [Kamyll001@hammer $ lsk -a /home/csmajs/amyll001 [1P[4hl[4l
+drwx------ 7   amyll001 csmajs    4096 Nov  5 16:02 assembly01
+-rwx------ 1   amyll001 csmajs   91914 Oct 31 11:18 assignments-backup3wPJyh
+-rwx------ 1   amyll001 csmajs   91914 Oct 31 12:03 assignments-backupecOrwk
+-rwx------ 1   amyll001 csmajs   91914 Oct 31 12:07 assignments-backupneuFqB
+-rw-r--r-- 1   amyll001 csmajs   19532 Nov  2 19:00 atteResume.odt
+drwx------ 6   amyll001 csmajs    4096 Nov 11 21:33 cs100
+drwx------ 3   amyll001 csmajs    8192 May 20 12:07 Desktop
+drwx------ 2   amyll001 csmajs    4096 Apr 29 11:50 Documents
+drwx------ 3   amyll001 csmajs    4096 Jun  3 13:27 Downloads
+-rwx------ 1   amyll001 csmajs     280 Apr  1 13:58 function.cpp
+drwx------ 6   amyll001 csmajs    4096 Jan 21 16:46 install
+drwx------ 2   amyll001 csmajs    4096 Apr  1 13:30 lab1
+drwx------ 2   amyll001 csmajs   20480 Apr 15 13:49 lab2
+drwx------ 2   amyll001 csmajs    8192 Apr 29 13:57 lab5
+drwx------ 2   amyll001 csmajs    4096 Sep 30 11:07 Music
+-rwx------ 1   amyll001 csmajs     469 Apr  1 13:05 oddInt.cpp
+drwx------ 2   amyll001 csmajs    4096 Sep 30 11:07 Pictures
+drwx------ 2   amyll001 csmajs    4096 Sep 30 11:07 Public
+drwx------ 3   amyll001 csmajs    4096 Jan 21 16:17 sdl
+drwx------ 3   amyll001 csmajs    4096 Oct 21 22:24 shell
+-rwx------ 1   amyll001 csmajs     273 Apr  1 13:05 switch.cpp
+drwx------ 2   amyll001 csmajs    4096 Sep 30 11:07 Templates
+-rwx------ 1   amyll001 csmajs     398 Oct 31 12:09 tmpFf_cDy
+drwx------ 8   amyll001 csmajs    4096 Oct 27 12:38 ucr-cs100
+drwx------ 2   amyll001 csmajs    4096 Sep 30 11:07 Videos
+-rw------- 1   amyll001 csmajs      27 Oct 20 11:40 vimrc
+~/cs100/rshell/bin
+amyll001@hammer $ lsk -l /home/csmajs/amyll001 [C[C[1P[4hR[4l
+assembly01                assignments-backup3wPJyh  assignments-backupecOrwk  assignments-backupneuFqB  
+atteResume.odt            cs100                     Desktop                   Documents                 
+Downloads                 function.cpp              install                   lab1                      
+lab2                      lab5                      Music                     oddInt.cpp                
+Pictures                  Public                    sdl                       shell                     
+switch.cpp                Templates                 tmpFf_cDy                 ucr-cs100                 
+Videos                    vimrc                     
+
+/home/csmajs/amyll001/assembly01:
+assn1.asm  assn2.asm  assn3.asm  assn4.asm  
+lab01      lab02      lab03      lab04      
+lab05      
+
+/home/csmajs/amyll001/assembly01/lab01:
+helloworld.asm          helloWorldPractice.asm  lab01.asm               
+
+/home/csmajs/amyll001/assembly01/lab02:
+exercise01.asm  exercise02.asm  exercise03.asm  exercise04.asm  
+
+/home/csmajs/amyll001/assembly01/lab03:
+exe1.asm  exe2.asm  exe3.asm  exe4.asm  
+lab3.tgz  
+
+/home/csmajs/amyll001/assembly01/lab04:
+exe1.asm  exe2.asm  exe3.asm  exe4.asm  
+lab4.tgz  
+
+/home/csmajs/amyll001/assembly01/lab05:
+exe1.asm  exe2.asm  exe3.asm  exe4.asm  
+lab5.tgz  
+
+/home/csmajs/amyll001/cs100:
+lab2      lab5      rshell    rshell-1  
+
+/home/csmajs/amyll001/cs100/lab2:
+a.out         fork.cpp      forkbomb.cpp  
+
+/home/csmajs/amyll001/cs100/lab5:
+a.out     cp.cpp    inF.txt   outF.txt  
+
+/home/csmajs/amyll001/cs100/rshell:
+bin        LICENSE    Makefile   README.md  
+src        tests      
+
+/home/csmajs/amyll001/cs100/rshell/bin:
+ls.script  lsk        
+
+/home/csmajs/amyll001/cs100/rshell/src:
+cp.cpp    ls.cpp    main.cpp  
+
+/home/csmajs/amyll001/cs100/rshell/tests:
+exec.script  
+
+/home/csmajs/amyll001/cs100/rshell-1:
+LICENSE    Makefile   README.md  src        
+tests      
+
+/home/csmajs/amyll001/cs100/rshell-1/src:
+cp.cpp   hw0.cpp  ls.cpp   
+
+/home/csmajs/amyll001/cs100/rshell-1/tests:
+exec  
+
+/home/csmajs/amyll001/Desktop:
+CS14Labs  
+
+/home/csmajs/amyll001/Desktop/CS14Labs:
+lab10     lab6      lab7      lab8      
+practice  
+
+/home/csmajs/amyll001/Desktop/CS14Labs/lab10:
+a.out      lab10.cpp  
+
+/home/csmajs/amyll001/Desktop/CS14Labs/lab6:
+a.out     lab6.cpp  
+
+/home/csmajs/amyll001/Desktop/CS14Labs/lab7:
+a.out     lab7.cpp  
+
+/home/csmajs/amyll001/Desktop/CS14Labs/lab8:
+a.out     lab8.cpp  
+
+/home/csmajs/amyll001/Desktop/CS14Labs/practice:
+sortingPractice.cpp  
+
+/home/csmajs/amyll001/Documents:
+isbn.cpp         lab2_ex1.cpp     lab2_ex2.cpp     lab2_ex3.cpp     
+lab3.cpp         lab4.cpp         madlib.cpp       madlibs.cpp      
+mathematics.cpp  
+
+/home/csmajs/amyll001/Downloads:
+a.out                  assn3.cc               cs010_assignments.zip  demo-project.zip       
+main.cpp               MyList.cpp             MyList.h               Node.h                 
+sdl                    test-hw6.cpp           
+
+/home/csmajs/amyll001/Downloads/sdl:
+makefile              SDL.h                 SDL2-2.0.1(1).tar.gz  SpriteSheet.cpp       
+SpriteSheet.h         week1.cpp             week1.zip             
+
+/home/csmajs/amyll001/install:
+bin      include  lib      share    
+
+/home/csmajs/amyll001/install/bin:
+sdl2-config  
+
+/home/csmajs/amyll001/install/include:
+SDL2  
+
+/home/csmajs/amyll001/install/include/SDL2:
+begin_code.h          close_code.h          SDL.h                 SDL_assert.h          
+SDL_atomic.h          SDL_audio.h           SDL_bits.h            SDL_blendmode.h       
+SDL_clipboard.h       SDL_config.h          SDL_cpuinfo.h         SDL_endian.h          
+SDL_error.h           SDL_events.h          SDL_filesystem.h      SDL_gamecontroller.h  
+SDL_gesture.h         SDL_haptic.h          SDL_hints.h           SDL_joystick.h        
+SDL_keyboard.h        SDL_keycode.h         SDL_loadso.h          SDL_log.h             
+SDL_main.h            SDL_messagebox.h      SDL_mouse.h           SDL_mutex.h           
+SDL_name.h            SDL_opengl.h          SDL_opengles.h        SDL_opengles2.h       
+SDL_pixels.h          SDL_platform.h        SDL_power.h           SDL_quit.h            
+SDL_rect.h            SDL_render.h          SDL_revision.h        SDL_rwops.h           
+SDL_scancode.h        SDL_shape.h           SDL_stdinc.h          SDL_surface.h         
+SDL_system.h          SDL_syswm.h           SDL_test.h            SDL_test_assert.h     
+SDL_test_common.h     SDL_test_compare.h    SDL_test_crc32.h      SDL_test_font.h       
+SDL_test_fuzzer.h     SDL_test_harness.h    SDL_test_images.h     SDL_test_log.h        
+SDL_test_md5.h        SDL_test_random.h     SDL_thread.h          SDL_timer.h           
+SDL_touch.h           SDL_types.h           SDL_version.h         SDL_video.h           
+
+/home/csmajs/amyll001/install/lib:
+libSDL2-2.0.so.0      libSDL2-2.0.so.0.1.0  libSDL2.a             libSDL2.la            
+libSDL2.so            libSDL2main.a         libSDL2_test.a        pkgconfig             
+
+/home/csmajs/amyll001/install/lib/pkgconfig:
+sdl2.pc  
+
+/home/csmajs/amyll001/install/share:
+aclocal  
+
+/home/csmajs/amyll001/install/share/aclocal:
+sdl2.m4  
+
+/home/csmajs/amyll001/lab1:
+function.cpp     function.out     lab1.cpp         lab1.o           
+lab1.out         oddInt.cpp       oddInt.out       primeNumber.cpp  
+primeNumber.out  switch.cpp       switch.out       
+
+/home/csmajs/amyll001/lab2:
+a.out       Node.cpp    Node.h      Node.h.gch  
+prime.cpp   
+
+/home/csmajs/amyll001/lab5:
+a.out     lab5.cpp  
+
+/home/csmajs/amyll001/Music:
+
+/home/csmajs/amyll001/Pictures:
+
+/home/csmajs/amyll001/Public:
+
+/home/csmajs/amyll001/sdl:
+SDL2-2.0.1         SDL2-2.0.1.tar.gz  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1:
+acinclude               android-project         Android.mk              autogen.sh              
+BUGS.txt                build                   build-scripts           cmake                   
+CMakeLists.txt          config.log              config.status           configure               
+configure.in            COPYING.txt             CREDITS.txt             debian                  
+include                 INSTALL.txt             libtool                 Makefile                
+Makefile.in             Makefile.minimal        Makefile.pandora        Makefile.psp            
+Makefile.rules          Makefile.wiz            README-android.txt      README-cmake.txt        
+README-directfb.txt     README-gesture.txt      README-hg.txt           README-ios.txt          
+README-macosx.txt       README-pandora.txt      README-platforms.txt    README-porting.txt      
+README-psp.txt          README-raspberrypi.txt  README-SDL.txt          README-touch.txt        
+README-wince.txt        README.txt              sdl2-config             sdl2-config.in          
+sdl2.m4                 sdl2.pc                 sdl2.pc.in              SDL2.spec               
+SDL2.spec.in            src                     test                    TODO.txt                
+VisualC                 VisualC.html            WhatsNew.txt            Xcode                   
+Xcode-iOS               
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/acinclude:
+ac_check_define.m4          alsa.m4                     ax_check_compiler_flags.m4  ax_gcc_archflag.m4          
+ax_gcc_x86_cpuid.m4.htm     esd.m4                      libtool.m4                  ltoptions.m4                
+ltsugar.m4                  ltversion.m4                lt~obsolete.m4              
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/android-project:
+AndroidManifest.xml   ant.properties        build.properties      build.xml             
+default.properties    jni                   proguard-project.txt  project.properties    
+res                   src                   
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/android-project/jni:
+Android.mk      Application.mk  src             
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/android-project/jni/src:
+Android.mk         Android_static.mk  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/android-project/res:
+drawable-hdpi    drawable-mdpi    drawable-xhdpi   drawable-xxhdpi  
+layout           values           
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/android-project/res/drawable-hdpi:
+ic_launcher.png  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/android-project/res/drawable-mdpi:
+ic_launcher.png  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/android-project/res/drawable-xhdpi:
+ic_launcher.png  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/android-project/res/drawable-xxhdpi:
+ic_launcher.png  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/android-project/res/layout:
+main.xml  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/android-project/res/values:
+strings.xml  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/android-project/src:
+org  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/android-project/src/org:
+libsdl  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/android-project/src/org/libsdl:
+app  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/android-project/src/org/libsdl/app:
+SDLActivity.java  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/build:
+edid-parse.d                      edid-parse.lo                     edid-parse.o                      e_atan2.d                         
+e_atan2.lo                        e_atan2.o                         e_log.d                           e_log.lo                          
+e_log.o                           e_pow.d                           e_pow.lo                          e_pow.o                           
+e_rem_pio2.d                      e_rem_pio2.lo                     e_rem_pio2.o                      e_sqrt.d                          
+e_sqrt.lo                         e_sqrt.o                          imKStoUCS.d                       imKStoUCS.lo                      
+imKStoUCS.o                       k_cos.d                           k_cos.lo                          k_cos.o                           
+k_rem_pio2.d                      k_rem_pio2.lo                     k_rem_pio2.o                      k_sin.d                           
+k_sin.lo                          k_sin.o                           libSDL2.la                        libSDL2main.a                     
+libSDL2_test.a                    SDL.d                             SDL.lo                            SDL.o                             
+SDL_alsa_audio.d                  SDL_alsa_audio.lo                 SDL_alsa_audio.o                  SDL_assert.d                      
+SDL_assert.lo                     SDL_assert.o                      SDL_atomic.d                      SDL_atomic.lo                     
+SDL_atomic.o                      SDL_audio.d                       SDL_audio.lo                      SDL_audio.o                       
+SDL_audiocvt.d                    SDL_audiocvt.lo                   SDL_audiocvt.o                    SDL_audiodev.d                    
+SDL_audiodev.lo                   SDL_audiodev.o                    SDL_audiotypecvt.d                SDL_audiotypecvt.lo               
+SDL_audiotypecvt.o                SDL_blendfillrect.d               SDL_blendfillrect.lo              SDL_blendfillrect.o               
+SDL_blendline.d                   SDL_blendline.lo                  SDL_blendline.o                   SDL_blendpoint.d                  
+SDL_blendpoint.lo                 SDL_blendpoint.o                  SDL_blit.d                        SDL_blit.lo                       
+SDL_blit.o                        SDL_blit_0.d                      SDL_blit_0.lo                     SDL_blit_0.o                      
+SDL_blit_1.d                      SDL_blit_1.lo                     SDL_blit_1.o                      SDL_blit_A.d                      
+SDL_blit_A.lo                     SDL_blit_A.o                      SDL_blit_auto.d                   SDL_blit_auto.lo                  
+SDL_blit_auto.o                   SDL_blit_copy.d                   SDL_blit_copy.lo                  SDL_blit_copy.o                   
+SDL_blit_N.d                      SDL_blit_N.lo                     SDL_blit_N.o                      SDL_blit_slow.d                   
+SDL_blit_slow.lo                  SDL_blit_slow.o                   SDL_bmp.d                         SDL_bmp.lo                        
+SDL_bmp.o                         SDL_clipboard.d                   SDL_clipboard.lo                  SDL_clipboard.o                   
+SDL_clipboardevents.d             SDL_clipboardevents.lo            SDL_clipboardevents.o             SDL_cpuinfo.d                     
+SDL_cpuinfo.lo                    SDL_cpuinfo.o                     SDL_diskaudio.d                   SDL_diskaudio.lo                  
+SDL_diskaudio.o                   SDL_drawline.d                    SDL_drawline.lo                   SDL_drawline.o                    
+SDL_drawpoint.d                   SDL_drawpoint.lo                  SDL_drawpoint.o                   SDL_dropevents.d                  
+SDL_dropevents.lo                 SDL_dropevents.o                  SDL_dspaudio.d                    SDL_dspaudio.lo                   
+SDL_dspaudio.o                    SDL_dummyaudio.d                  SDL_dummyaudio.lo                 SDL_dummyaudio.o                  
+SDL_dummy_main.d                  SDL_dummy_main.lo                 SDL_dummy_main.o                  SDL_egl.d                         
+SDL_egl.lo                        SDL_egl.o                         SDL_error.d                       SDL_error.lo                      
+SDL_error.o                       SDL_esdaudio.d                    SDL_esdaudio.lo                   SDL_esdaudio.o                    
+SDL_evdev.d                       SDL_evdev.lo                      SDL_evdev.o                       SDL_events.d                      
+SDL_events.lo                     SDL_events.o                      SDL_fillrect.d                    SDL_fillrect.lo                   
+SDL_fillrect.o                    SDL_gamecontroller.d              SDL_gamecontroller.lo             SDL_gamecontroller.o              
+SDL_gesture.d                     SDL_gesture.lo                    SDL_gesture.o                     SDL_getenv.d                      
+SDL_getenv.lo                     SDL_getenv.o                      SDL_haptic.d                      SDL_haptic.lo                     
+SDL_haptic.o                      SDL_hints.d                       SDL_hints.lo                      SDL_hints.o                       
+SDL_iconv.d                       SDL_iconv.lo                      SDL_iconv.o                       SDL_joystick.d                    
+SDL_joystick.lo                   SDL_joystick.o                    SDL_keyboard.d                    SDL_keyboard.lo                   
+SDL_keyboard.o                    SDL_log.d                         SDL_log.lo                        SDL_log.o                         
+SDL_malloc.d                      SDL_malloc.lo                     SDL_malloc.o                      SDL_mixer.d                       
+SDL_mixer.lo                      SDL_mixer.o                       SDL_mouse.d                       SDL_mouse.lo                      
+SDL_mouse.o                       SDL_nullevents.d                  SDL_nullevents.lo                 SDL_nullevents.o                  
+SDL_nullframebuffer.d             SDL_nullframebuffer.lo            SDL_nullframebuffer.o             SDL_nullvideo.d                   
+SDL_nullvideo.lo                  SDL_nullvideo.o                   SDL_pixels.d                      SDL_pixels.lo                     
+SDL_pixels.o                      SDL_power.d                       SDL_power.lo                      SDL_power.o                       
+SDL_qsort.d                       SDL_qsort.lo                      SDL_qsort.o                       SDL_quit.d                        
+SDL_quit.lo                       SDL_quit.o                        SDL_rect.d                        SDL_rect.lo                       
+SDL_rect.o                        SDL_render.d                      SDL_render.lo                     SDL_render.o                      
+SDL_render_d3d.d                  SDL_render_d3d.lo                 SDL_render_d3d.o                  SDL_render_gl.d                   
+SDL_render_gl.lo                  SDL_render_gl.o                   SDL_render_gles.d                 SDL_render_gles.lo                
+SDL_render_gles.o                 SDL_render_gles2.d                SDL_render_gles2.lo               SDL_render_gles2.o                
+SDL_render_psp.d                  SDL_render_psp.lo                 SDL_render_psp.o                  SDL_render_sw.d                   
+SDL_render_sw.lo                  SDL_render_sw.o                   SDL_RLEaccel.d                    SDL_RLEaccel.lo                   
+SDL_RLEaccel.o                    SDL_rotate.d                      SDL_rotate.lo                     SDL_rotate.o                      
+SDL_rwops.d                       SDL_rwops.lo                      SDL_rwops.o                       SDL_shaders_gl.d                  
+SDL_shaders_gl.lo                 SDL_shaders_gl.o                  SDL_shaders_gles2.d               SDL_shaders_gles2.lo              
+SDL_shaders_gles2.o               SDL_shape.d                       SDL_shape.lo                      SDL_shape.o                       
+SDL_spinlock.d                    SDL_spinlock.lo                   SDL_spinlock.o                    SDL_stdlib.d                      
+SDL_stdlib.lo                     SDL_stdlib.o                      SDL_stretch.d                     SDL_stretch.lo                    
+SDL_stretch.o                     SDL_string.d                      SDL_string.lo                     SDL_string.o                      
+SDL_surface.d                     SDL_surface.lo                    SDL_surface.o                     SDL_syscond.d                     
+SDL_syscond.lo                    SDL_syscond.o                     SDL_sysfilesystem.d               SDL_sysfilesystem.lo              
+SDL_sysfilesystem.o               SDL_syshaptic.d                   SDL_syshaptic.lo                  SDL_syshaptic.o                   
+SDL_sysjoystick.d                 SDL_sysjoystick.lo                SDL_sysjoystick.o                 SDL_sysloadso.d                   
+SDL_sysloadso.lo                  SDL_sysloadso.o                   SDL_sysmutex.d                    SDL_sysmutex.lo                   
+SDL_sysmutex.o                    SDL_syspower.d                    SDL_syspower.lo                   SDL_syspower.o                    
+SDL_syssem.d                      SDL_syssem.lo                     SDL_syssem.o                      SDL_systhread.d                   
+SDL_systhread.lo                  SDL_systhread.o                   SDL_systimer.d                    SDL_systimer.lo                   
+SDL_systimer.o                    SDL_systls.d                      SDL_systls.lo                     SDL_systls.o                      
+SDL_test_assert.d                 SDL_test_assert.lo                SDL_test_assert.o                 SDL_test_common.d                 
+SDL_test_common.lo                SDL_test_common.o                 SDL_test_compare.d                SDL_test_compare.lo               
+SDL_test_compare.o                SDL_test_crc32.d                  SDL_test_crc32.lo                 SDL_test_crc32.o                  
+SDL_test_font.d                   SDL_test_font.lo                  SDL_test_font.o                   SDL_test_fuzzer.d                 
+SDL_test_fuzzer.lo                SDL_test_fuzzer.o                 SDL_test_harness.d                SDL_test_harness.lo               
+SDL_test_harness.o                SDL_test_imageBlit.d              SDL_test_imageBlit.lo             SDL_test_imageBlit.o              
+SDL_test_imageBlitBlend.d         SDL_test_imageBlitBlend.lo        SDL_test_imageBlitBlend.o         SDL_test_imageFace.d              
+SDL_test_imageFace.lo             SDL_test_imageFace.o              SDL_test_imagePrimitives.d        SDL_test_imagePrimitives.lo       
+SDL_test_imagePrimitives.o        SDL_test_imagePrimitivesBlend.d   SDL_test_imagePrimitivesBlend.lo  SDL_test_imagePrimitivesBlend.o   
+SDL_test_log.d                    SDL_test_log.lo                   SDL_test_log.o                    SDL_test_md5.d                    
+SDL_test_md5.lo                   SDL_test_md5.o                    SDL_test_random.d                 SDL_test_random.lo                
+SDL_test_random.o                 SDL_thread.d                      SDL_thread.lo                     SDL_thread.o                      
+SDL_timer.d                       SDL_timer.lo                      SDL_timer.o                       SDL_touch.d                       
+SDL_touch.lo                      SDL_touch.o                       SDL_video.d                       SDL_video.lo                      
+SDL_video.o                       SDL_wave.d                        SDL_wave.lo                       SDL_wave.o                        
+SDL_windowevents.d                SDL_windowevents.lo               SDL_windowevents.o                SDL_x11clipboard.d                
+SDL_x11clipboard.lo               SDL_x11clipboard.o                SDL_x11dyn.d                      SDL_x11dyn.lo                     
+SDL_x11dyn.o                      SDL_x11events.d                   SDL_x11events.lo                  SDL_x11events.o                   
+SDL_x11framebuffer.d              SDL_x11framebuffer.lo             SDL_x11framebuffer.o              SDL_x11keyboard.d                 
+SDL_x11keyboard.lo                SDL_x11keyboard.o                 SDL_x11messagebox.d               SDL_x11messagebox.lo              
+SDL_x11messagebox.o               SDL_x11modes.d                    SDL_x11modes.lo                   SDL_x11modes.o                    
+SDL_x11mouse.d                    SDL_x11mouse.lo                   SDL_x11mouse.o                    SDL_x11opengl.d                   
+SDL_x11opengl.lo                  SDL_x11opengl.o                   SDL_x11opengles.d                 SDL_x11opengles.lo                
+SDL_x11opengles.o                 SDL_x11shape.d                    SDL_x11shape.lo                   SDL_x11shape.o                    
+SDL_x11touch.d                    SDL_x11touch.lo                   SDL_x11touch.o                    SDL_x11video.d                    
+SDL_x11video.lo                   SDL_x11video.o                    SDL_x11window.d                   SDL_x11window.lo                  
+SDL_x11window.o                   SDL_x11xinput2.d                  SDL_x11xinput2.lo                 SDL_x11xinput2.o                  
+SDL_yuv_mmx.d                     SDL_yuv_mmx.lo                    SDL_yuv_mmx.o                     SDL_yuv_sw.d                      
+SDL_yuv_sw.lo                     SDL_yuv_sw.o                      s_atan.d                          s_atan.lo                         
+s_atan.o                          s_copysign.d                      s_copysign.lo                     s_copysign.o                      
+s_cos.d                           s_cos.lo                          s_cos.o                           s_fabs.d                          
+s_fabs.lo                         s_fabs.o                          s_floor.d                         s_floor.lo                        
+s_floor.o                         s_scalbn.d                        s_scalbn.lo                       s_scalbn.o                        
+s_sin.d                           s_sin.lo                          s_sin.o                           
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/build-scripts:
+androidbuild.sh          config.guess             config.sub               g++-fat.sh               
+gcc-fat.sh               install-sh               iosbuild.sh              ltmain.sh                
+mkinstalldirs            raspberrypi-buildbot.sh  showrev.sh               strip_fPIC.sh            
+updaterev.sh             
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/cmake:
+macros.cmake     sdlchecks.cmake  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/debian:
+changelog             compat                control               copyright             
+docs                  libsdl2-dev.install   libsdl2-dev.manpages  libsdl2.install       
+rules                 sdl2-config.1         source                watch                 
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/debian/source:
+format  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/include:
+begin_code.h           close_code.h           doxyfile               SDL.h                  
+SDL_assert.h           SDL_atomic.h           SDL_audio.h            SDL_bits.h             
+SDL_blendmode.h        SDL_clipboard.h        SDL_config.h           SDL_config.h.cmake     
+SDL_config.h.in        SDL_config_android.h   SDL_config_iphoneos.h  SDL_config_macosx.h    
+SDL_config_minimal.h   SDL_config_pandora.h   SDL_config_psp.h       SDL_config_windows.h   
+SDL_config_wiz.h       SDL_copying.h          SDL_cpuinfo.h          SDL_endian.h           
+SDL_error.h            SDL_events.h           SDL_filesystem.h       SDL_gamecontroller.h   
+SDL_gesture.h          SDL_haptic.h           SDL_hints.h            SDL_joystick.h         
+SDL_keyboard.h         SDL_keycode.h          SDL_loadso.h           SDL_log.h              
+SDL_main.h             SDL_messagebox.h       SDL_mouse.h            SDL_mutex.h            
+SDL_name.h             SDL_opengl.h           SDL_opengles.h         SDL_opengles2.h        
+SDL_pixels.h           SDL_platform.h         SDL_power.h            SDL_quit.h             
+SDL_rect.h             SDL_render.h           SDL_revision.h         SDL_rwops.h            
+SDL_scancode.h         SDL_shape.h            SDL_stdinc.h           SDL_surface.h          
+SDL_system.h           SDL_syswm.h            SDL_test.h             SDL_test_assert.h      
+SDL_test_common.h      SDL_test_compare.h     SDL_test_crc32.h       SDL_test_font.h        
+SDL_test_fuzzer.h      SDL_test_harness.h     SDL_test_images.h      SDL_test_log.h         
+SDL_test_md5.h         SDL_test_random.h      SDL_thread.h           SDL_timer.h            
+SDL_touch.h            SDL_types.h            SDL_version.h          SDL_video.h            
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src:
+atomic          audio           core            cpuinfo         
+events          file            filesystem      haptic          
+input           joystick        libm            loadso          
+main            power           render          SDL.c           
+SDL_assert.c    SDL_assert_c.h  SDL_error.c     SDL_error_c.h   
+SDL_hints.c     SDL_log.c       stdlib          test            
+thread          timer           video           
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/atomic:
+SDL_atomic.c    SDL_spinlock.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/audio:
+alsa                android             arts                baudio              
+bsd                 coreaudio           directsound         disk                
+dsp                 dummy               esd                 fusionsound         
+nas                 paudio              psp                 pulseaudio          
+qsa                 sdlgenaudiocvt.pl   SDL_audio.c         SDL_audiocvt.c      
+SDL_audiodev.c      SDL_audiodev_c.h    SDL_audiomem.h      SDL_audiotypecvt.c  
+SDL_audio_c.h       SDL_mixer.c         SDL_sysaudio.h      SDL_wave.c          
+SDL_wave.h          sndio               sun                 winmm               
+xaudio2             
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/audio/alsa:
+SDL_alsa_audio.c  SDL_alsa_audio.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/audio/android:
+SDL_androidaudio.c  SDL_androidaudio.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/audio/arts:
+SDL_artsaudio.c  SDL_artsaudio.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/audio/baudio:
+SDL_beaudio.cc  SDL_beaudio.h   
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/audio/bsd:
+SDL_bsdaudio.c  SDL_bsdaudio.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/audio/coreaudio:
+SDL_coreaudio.c  SDL_coreaudio.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/audio/directsound:
+directx.h          SDL_directsound.c  SDL_directsound.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/audio/disk:
+SDL_diskaudio.c  SDL_diskaudio.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/audio/dsp:
+SDL_dspaudio.c  SDL_dspaudio.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/audio/dummy:
+SDL_dummyaudio.c  SDL_dummyaudio.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/audio/esd:
+SDL_esdaudio.c  SDL_esdaudio.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/audio/fusionsound:
+SDL_fsaudio.c  SDL_fsaudio.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/audio/nas:
+SDL_nasaudio.c  SDL_nasaudio.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/audio/paudio:
+SDL_paudio.c  SDL_paudio.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/audio/psp:
+SDL_pspaudio.c  SDL_pspaudio.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/audio/pulseaudio:
+SDL_pulseaudio.c  SDL_pulseaudio.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/audio/qsa:
+SDL_qsa_audio.c  SDL_qsa_audio.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/audio/sndio:
+SDL_sndioaudio.c  SDL_sndioaudio.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/audio/sun:
+SDL_sunaudio.c  SDL_sunaudio.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/audio/winmm:
+SDL_winmm.c  SDL_winmm.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/audio/xaudio2:
+SDL_xaudio2.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/core:
+android  linux    windows  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/core/android:
+SDL_android.c  SDL_android.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/core/linux:
+SDL_udev.c  SDL_udev.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/core/windows:
+SDL_windows.c  SDL_windows.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/cpuinfo:
+SDL_cpuinfo.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/events:
+blank_cursor.h           default_cursor.h         scancodes_darwin.h       scancodes_linux.h        
+scancodes_windows.h      scancodes_xfree86.h      SDL_clipboardevents.c    SDL_clipboardevents_c.h  
+SDL_dropevents.c         SDL_dropevents_c.h       SDL_events.c             SDL_events_c.h           
+SDL_gesture.c            SDL_gesture_c.h          SDL_keyboard.c           SDL_keyboard_c.h         
+SDL_mouse.c              SDL_mouse_c.h            SDL_quit.c               SDL_sysevents.h          
+SDL_touch.c              SDL_touch_c.h            SDL_windowevents.c       SDL_windowevents_c.h     
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/file:
+cocoa        SDL_rwops.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/file/cocoa:
+SDL_rwopsbundlesupport.h  SDL_rwopsbundlesupport.m  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/filesystem:
+beos     cocoa    dummy    unix     
+windows  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/filesystem/beos:
+SDL_sysfilesystem.cc  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/filesystem/cocoa:
+SDL_sysfilesystem.m  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/filesystem/dummy:
+SDL_sysfilesystem.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/filesystem/unix:
+SDL_sysfilesystem.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/filesystem/windows:
+SDL_sysfilesystem.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/haptic:
+darwin           dummy            linux            SDL_haptic.c     
+SDL_haptic_c.h   SDL_syshaptic.h  windows          
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/haptic/darwin:
+SDL_syshaptic.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/haptic/dummy:
+SDL_syshaptic.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/haptic/linux:
+SDL_syshaptic.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/haptic/windows:
+SDL_syshaptic.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/input:
+evdev  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/input/evdev:
+SDL_evdev.c  SDL_evdev.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/joystick:
+android                 beos                    bsd                     darwin                  
+dummy                   iphoneos                linux                   psp                     
+SDL_gamecontroller.c    SDL_gamecontrollerdb.h  SDL_joystick.c          SDL_joystick_c.h        
+SDL_sysjoystick.h       sort_controllers.py     windows                 
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/joystick/android:
+SDL_sysjoystick.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/joystick/beos:
+SDL_bejoystick.cc  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/joystick/bsd:
+SDL_sysjoystick.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/joystick/darwin:
+SDL_sysjoystick.c    SDL_sysjoystick_c.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/joystick/dummy:
+SDL_sysjoystick.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/joystick/iphoneos:
+SDLUIAccelerationDelegate.h  SDLUIAccelerationDelegate.m  SDL_sysjoystick.m            
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/joystick/linux:
+SDL_sysjoystick.c    SDL_sysjoystick_c.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/joystick/psp:
+SDL_sysjoystick.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/joystick/windows:
+SDL_dxjoystick.c    SDL_dxjoystick_c.h  SDL_mmjoystick.c    
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/libm:
+e_atan2.c       e_log.c         e_pow.c         e_rem_pio2.c    
+e_sqrt.c        k_cos.c         k_rem_pio2.c    k_sin.c         
+math_libm.h     math_private.h  s_atan.c        s_copysign.c    
+s_cos.c         s_fabs.c        s_floor.c       s_scalbn.c      
+s_sin.c         
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/loadso:
+beos     dlopen   dummy    windows  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/loadso/beos:
+SDL_sysloadso.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/loadso/dlopen:
+SDL_sysloadso.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/loadso/dummy:
+SDL_sysloadso.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/loadso/windows:
+SDL_sysloadso.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/main:
+android  beos     dummy    psp      
+windows  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/main/android:
+SDL_android_main.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/main/beos:
+SDL_BApp.h    SDL_BeApp.cc  SDL_BeApp.h   
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/main/dummy:
+SDL_dummy_main.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/main/psp:
+SDL_psp_main.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/main/windows:
+SDL_windows_main.c  version.rc          
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/power:
+android      beos         linux        macosx       
+psp          SDL_power.c  uikit        windows      
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/power/android:
+SDL_syspower.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/power/beos:
+SDL_syspower.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/power/linux:
+SDL_syspower.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/power/macosx:
+SDL_syspower.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/power/psp:
+SDL_syspower.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/power/uikit:
+SDL_syspower.h  SDL_syspower.m  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/power/windows:
+SDL_syspower.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/render:
+direct3d         mmx.h            opengl           opengles         
+opengles2        psp              SDL_render.c     SDL_sysrender.h  
+SDL_yuv_mmx.c    SDL_yuv_sw.c     SDL_yuv_sw_c.h   software         
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/render/direct3d:
+SDL_render_d3d.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/render/opengl:
+SDL_glfuncs.h     SDL_render_gl.c   SDL_shaders_gl.c  SDL_shaders_gl.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/render/opengles:
+SDL_glesfuncs.h    SDL_render_gles.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/render/opengles2:
+SDL_gles2funcs.h     SDL_render_gles2.c   SDL_shaders_gles2.c  SDL_shaders_gles2.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/render/psp:
+SDL_render_psp.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/render/software:
+SDL_blendfillrect.c  SDL_blendfillrect.h  SDL_blendline.c      SDL_blendline.h      
+SDL_blendpoint.c     SDL_blendpoint.h     SDL_draw.h           SDL_drawline.c       
+SDL_drawline.h       SDL_drawpoint.c      SDL_drawpoint.h      SDL_render_sw.c      
+SDL_render_sw_c.h    SDL_rotate.c         SDL_rotate.h         
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/stdlib:
+SDL_getenv.c  SDL_iconv.c   SDL_malloc.c  SDL_qsort.c   
+SDL_stdlib.c  SDL_string.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/test:
+SDL_test_assert.c                SDL_test_common.c                SDL_test_compare.c               SDL_test_crc32.c                 
+SDL_test_font.c                  SDL_test_fuzzer.c                SDL_test_fuzzer.c~               SDL_test_harness.c               
+SDL_test_imageBlit.c             SDL_test_imageBlitBlend.c        SDL_test_imageFace.c             SDL_test_imagePrimitives.c       
+SDL_test_imagePrimitivesBlend.c  SDL_test_log.c                   SDL_test_md5.c                   SDL_test_random.c                
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/thread:
+beos             generic          psp              pthread          
+SDL_systhread.h  SDL_thread.c     SDL_thread_c.h   windows          
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/thread/beos:
+SDL_syssem.c       SDL_systhread.c    SDL_systhread_c.h  SDL_systls.c       
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/thread/generic:
+SDL_syscond.c      SDL_sysmutex.c     SDL_sysmutex_c.h   SDL_syssem.c       
+SDL_systhread.c    SDL_systhread_c.h  SDL_systls.c       
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/thread/psp:
+SDL_syscond.c      SDL_sysmutex.c     SDL_sysmutex_c.h   SDL_syssem.c       
+SDL_systhread.c    SDL_systhread_c.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/thread/pthread:
+SDL_syscond.c      SDL_sysmutex.c     SDL_sysmutex_c.h   SDL_syssem.c       
+SDL_systhread.c    SDL_systhread_c.h  SDL_systls.c       
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/thread/windows:
+SDL_sysmutex.c     SDL_syssem.c       SDL_systhread.c    SDL_systhread_c.h  
+SDL_systls.c       
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/timer:
+beos           dummy          psp            SDL_timer.c    
+SDL_timer_c.h  unix           windows        
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/timer/beos:
+SDL_systimer.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/timer/dummy:
+SDL_systimer.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/timer/psp:
+SDL_systimer.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/timer/unix:
+SDL_systimer.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/timer/windows:
+SDL_systimer.c  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/video:
+android                bwindow                cocoa                  directfb               
+dummy                  pandora                psp                    raspberry              
+sdlgenblit.pl          SDL_blit.c             SDL_blit.h             SDL_blit_0.c           
+SDL_blit_1.c           SDL_blit_A.c           SDL_blit_auto.c        SDL_blit_auto.h        
+SDL_blit_copy.c        SDL_blit_copy.h        SDL_blit_N.c           SDL_blit_slow.c        
+SDL_blit_slow.h        SDL_bmp.c              SDL_clipboard.c        SDL_egl.c              
+SDL_egl.h              SDL_fillrect.c         SDL_pixels.c           SDL_pixels_c.h         
+SDL_rect.c             SDL_rect_c.h           SDL_RLEaccel.c         SDL_RLEaccel_c.h       
+SDL_shape.c            SDL_shape_internals.h  SDL_stretch.c          SDL_surface.c          
+SDL_sysvideo.h         SDL_video.c            uikit                  windows                
+x11                    
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/video/android:
+SDL_androidclipboard.c  SDL_androidclipboard.h  SDL_androidevents.c     SDL_androidevents.h     
+SDL_androidgl.c         SDL_androidkeyboard.c   SDL_androidkeyboard.h   SDL_androidtouch.c      
+SDL_androidtouch.h      SDL_androidvideo.c      SDL_androidvideo.h      SDL_androidwindow.c     
+SDL_androidwindow.h     
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/video/bwindow:
+SDL_bclipboard.cc    SDL_bclipboard.h     SDL_bevents.cc       SDL_bevents.h        
+SDL_bframebuffer.cc  SDL_bframebuffer.h   SDL_bkeyboard.cc     SDL_bkeyboard.h      
+SDL_bmodes.cc        SDL_bmodes.h         SDL_bopengl.cc       SDL_bopengl.h        
+SDL_bvideo.cc        SDL_bvideo.h         SDL_BWin.h           SDL_bwindow.cc       
+SDL_bwindow.h        
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/video/cocoa:
+SDL_cocoaclipboard.h   SDL_cocoaclipboard.m   SDL_cocoaevents.h      SDL_cocoaevents.m      
+SDL_cocoakeyboard.h    SDL_cocoakeyboard.m    SDL_cocoamessagebox.h  SDL_cocoamessagebox.m  
+SDL_cocoamodes.h       SDL_cocoamodes.m       SDL_cocoamouse.h       SDL_cocoamouse.m       
+SDL_cocoamousetap.h    SDL_cocoamousetap.m    SDL_cocoaopengl.h      SDL_cocoaopengl.m      
+SDL_cocoashape.h       SDL_cocoashape.m       SDL_cocoavideo.h       SDL_cocoavideo.m       
+SDL_cocoawindow.h      SDL_cocoawindow.m      
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/video/directfb:
+SDL_DirectFB_dyn.c     SDL_DirectFB_dyn.h     SDL_DirectFB_events.c  SDL_DirectFB_events.h  
+SDL_DirectFB_modes.c   SDL_DirectFB_modes.h   SDL_DirectFB_mouse.c   SDL_DirectFB_mouse.h   
+SDL_DirectFB_opengl.c  SDL_DirectFB_opengl.h  SDL_DirectFB_render.c  SDL_DirectFB_render.h  
+SDL_DirectFB_shape.c   SDL_DirectFB_shape.h   SDL_DirectFB_video.c   SDL_DirectFB_video.h   
+SDL_DirectFB_window.c  SDL_DirectFB_window.h  SDL_DirectFB_WM.c      SDL_DirectFB_WM.h      
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/video/dummy:
+SDL_nullevents.c         SDL_nullevents_c.h       SDL_nullframebuffer.c    SDL_nullframebuffer_c.h  
+SDL_nullvideo.c          SDL_nullvideo.h          
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/video/pandora:
+SDL_pandora.c         SDL_pandora.h         SDL_pandora_events.c  SDL_pandora_events.h  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/video/psp:
+SDL_pspevents.c    SDL_pspevents_c.h  SDL_pspgl.c        SDL_pspgl_c.h      
+SDL_pspmouse.c     SDL_pspmouse_c.h   SDL_pspvideo.c     SDL_pspvideo.h     
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/video/raspberry:
+SDL_rpievents.c    SDL_rpievents_c.h  SDL_rpimouse.c     SDL_rpimouse.h     
+SDL_rpiopengles.c  SDL_rpiopengles.h  SDL_rpivideo.c     SDL_rpivideo.h     
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/video/uikit:
+keyinfotable.h             SDL_uikitappdelegate.h     SDL_uikitappdelegate.m     SDL_uikitevents.h          
+SDL_uikitevents.m          SDL_uikitmessagebox.h      SDL_uikitmessagebox.m      SDL_uikitmodes.h           
+SDL_uikitmodes.m           SDL_uikitopengles.h        SDL_uikitopengles.m        SDL_uikitopenglview.h      
+SDL_uikitopenglview.m      SDL_uikitvideo.h           SDL_uikitvideo.m           SDL_uikitview.h            
+SDL_uikitview.m            SDL_uikitviewcontroller.h  SDL_uikitviewcontroller.m  SDL_uikitwindow.h          
+SDL_uikitwindow.m          
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/video/windows:
+SDL_msctf.h               SDL_vkeys.h               SDL_windowsclipboard.c    SDL_windowsclipboard.h    
+SDL_windowsevents.c       SDL_windowsevents.h       SDL_windowsframebuffer.c  SDL_windowsframebuffer.h  
+SDL_windowskeyboard.c     SDL_windowskeyboard.h     SDL_windowsmessagebox.c   SDL_windowsmessagebox.h   
+SDL_windowsmodes.c        SDL_windowsmodes.h        SDL_windowsmouse.c        SDL_windowsmouse.h        
+SDL_windowsopengl.c       SDL_windowsopengl.h       SDL_windowsshape.c        SDL_windowsshape.h        
+SDL_windowsvideo.c        SDL_windowsvideo.h        SDL_windowswindow.c       SDL_windowswindow.h       
+wmmsg.h                   
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/src/video/x11:
+edid-parse.c          edid.h                imKStoUCS.c           imKStoUCS.h           
+SDL_x11clipboard.c    SDL_x11clipboard.h    SDL_x11dyn.c          SDL_x11dyn.h          
+SDL_x11events.c       SDL_x11events.h       SDL_x11framebuffer.c  SDL_x11framebuffer.h  
+SDL_x11keyboard.c     SDL_x11keyboard.h     SDL_x11messagebox.c   SDL_x11messagebox.h   
+SDL_x11modes.c        SDL_x11modes.h        SDL_x11mouse.c        SDL_x11mouse.h        
+SDL_x11opengl.c       SDL_x11opengl.h       SDL_x11opengles.c     SDL_x11opengles.h     
+SDL_x11shape.c        SDL_x11shape.h        SDL_x11sym.h          SDL_x11touch.c        
+SDL_x11touch.h        SDL_x11video.c        SDL_x11video.h        SDL_x11window.c       
+SDL_x11window.h       SDL_x11xinput2.c      SDL_x11xinput2.h      
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/test:
+acinclude.m4                aclocal.m4                  autogen.sh                  checkkeys.c                 
+configure                   configure.in                COPYING                     gcc-fat.sh                  
+icon.bmp                    loopwave.c                  Makefile.in                 moose.dat                   
+picture.xbm                 README                      relative_mode.markdown      sample.bmp                  
+sample.wav                  shapes                      testatomic.c                testaudioinfo.c             
+testautomation.c            testautomation_audio.c      testautomation_clipboard.c  testautomation_events.c     
+testautomation_keyboard.c   testautomation_main.c       testautomation_mouse.c      testautomation_pixels.c     
+testautomation_platform.c   testautomation_rect.c       testautomation_render.c     testautomation_rwops.c      
+testautomation_sdltest.c    testautomation_stdlib.c     testautomation_suites.h     testautomation_surface.c    
+testautomation_syswm.c      testautomation_timer.c      testautomation_video.c      testdraw2.c                 
+testdrawchessboard.c        testdropfile.c              testerror.c                 testfile.c                  
+testfilesystem.c            testgamecontroller.c        testgesture.c               testgl2.c                   
+testgles.c                  testhaptic.c                testiconv.c                 testime.c                   
+testintersections.c         testjoystick.c              testkeys.c                  testloadso.c                
+testlock.c                  testmessage.c               testmultiaudio.c            testnative.c                
+testnative.h                testnativecocoa.m           testnativew32.c             testnativex11.c             
+testoverlay2.c              testplatform.c              testpower.c                 testrelative.c              
+testrendercopyex.c          testrendertarget.c          testresample.c              testrumble.c                
+testscale.c                 testsem.c                   testshader.c                testshape.c                 
+testsprite2.c               testspriteminimal.c         teststreaming.c             testthread.c                
+testtimer.c                 testver.c                   testwm2.c                   torturethread.c             
+utf8.txt                    
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/test/shapes:
+p01_shape24.bmp        p01_shape32alpha.bmp   p01_shape8.bmp         p02_shape24.bmp        
+p02_shape32alpha.bmp   p02_shape8.bmp         p03_shape24.bmp        p03_shape8.bmp         
+p04_shape1.bmp         p04_shape24.bmp        p04_shape32alpha.bmp   p04_shape8.bmp         
+p05_shape8.bmp         p06_shape1alpha.bmp    p06_shape24.bmp        p06_shape32alpha.bmp   
+p06_shape8.bmp         p07_shape24.bmp        p07_shape32alpha.bmp   p07_shape8.bmp         
+p08_shape24.bmp        p08_shape32alpha.bmp   p08_shape8.bmp         p09_shape24.bmp        
+p09_shape32alpha.bmp   p09_shape8.bmp         p10_shape1.bmp         p10_shape24.bmp        
+p10_shape32alpha.bmp   p10_shape8.bmp         p11_shape24.bmp        p11_shape32alpha.bmp   
+p11_shape8.bmp         p12_shape24.bmp        p12_shape8.bmp         p13_shape24.bmp        
+p13_shape32alpha.bmp   p13_shape8.bmp         p14_shape24.bmp        p14_shape8.bmp         
+p15_shape24.bmp        p15_shape32alpha.bmp   p15_shape8.bmp         p16_shape1.bmp         
+p16_shape24.bmp        p16_shape8.bmp         trollface_24.bmp       trollface_32alpha.bmp  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/VisualC:
+clean.sh          SDL               SDLmain           SDLtest           
+SDL_VS2008.sln    SDL_VS2010.sln    SDL_VS2010EE.sln  SDL_VS2012.sln    
+SDL_VS2012EE.sln  tests             
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/VisualC/SDL:
+SDL_VS2008.vcproj   SDL_VS2010.vcxproj  SDL_VS2012.vcxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/VisualC/SDLmain:
+SDLmain_VS2008.vcproj   SDLmain_VS2010.vcxproj  SDLmain_VS2012.vcxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/VisualC/SDLtest:
+SDLtest_VS2008.vcproj   SDLtest_VS2010.vcxproj  SDLtest_VS2012.vcxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/VisualC/tests:
+checkkeys           loopwave            testatomic          testautomation      
+testdraw2           testfile            testgamecontroller  testgesture         
+testgl2             testjoystick        testoverlay2        testplatform        
+testpower           testrendertarget    testscale           testshape           
+testsprite2         
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/VisualC/tests/checkkeys:
+checkkeys_VS2008.vcproj   checkkeys_VS2010.vcxproj  checkkeys_VS2012.vcxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/VisualC/tests/loopwave:
+loopwave_VS2008.vcproj   loopwave_VS2010.vcxproj  loopwave_VS2012.vcxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/VisualC/tests/testatomic:
+testatomic_VS2008.vcproj   testatomic_VS2010.vcxproj  testatomic_VS2012.vcxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/VisualC/tests/testautomation:
+testautomation_VS2008.vcproj   testautomation_vs2010.vcxproj  testautomation_vs2012.vcxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/VisualC/tests/testdraw2:
+testdraw2_VS2008.vcproj   testdraw2_VS2010.vcxproj  testdraw2_VS2012.vcxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/VisualC/tests/testfile:
+testfile_VS2008.vcproj   testfile_VS2010.vcxproj  testfile_VS2012.vcxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/VisualC/tests/testgamecontroller:
+testgamecontroller_VS2010.vcxproj  testgamecontroller_VS2012.vcxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/VisualC/tests/testgesture:
+testgesture_VS2008.vcproj   testgesture_VS2010.vcxproj  testgesture_VS2012.vcxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/VisualC/tests/testgl2:
+testgl2_VS2008.vcproj   testgl2_VS2010.vcxproj  testgl2_VS2012.vcxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/VisualC/tests/testjoystick:
+testjoystick_VS2008.vcproj   testjoystick_VS2010.vcxproj  testjoystick_VS2012.vcxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/VisualC/tests/testoverlay2:
+testoverlay2_VS2008.vcproj   testoverlay2_VS2010.vcxproj  testoverlay2_VS2012.vcxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/VisualC/tests/testplatform:
+testplatform_VS2008.vcproj   testplatform_VS2010.vcxproj  testplatform_VS2012.vcxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/VisualC/tests/testpower:
+testpower_VS2008.vcproj   testpower_VS2010.vcxproj  testpower_VS2012.vcxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/VisualC/tests/testrendertarget:
+testrendertarget_VS2008.vcproj   testrendertarget_VS2010.vcxproj  testrendertarget_VS2012.vcxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/VisualC/tests/testscale:
+testscale_VS2008.vcproj   testscale_VS2010.vcxproj  testscale_VS2012.vcxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/VisualC/tests/testshape:
+testshape_VS2008.vcproj   testshape_VS2010.vcxproj  testshape_VS2012.vcxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/VisualC/tests/testsprite2:
+testsprite2_VS2008.vcproj   testsprite2_VS2010.vcxproj  testsprite2_VS2012.vcxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode:
+SDL          SDLTest      XcodeDocSet  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode/SDL:
+Info-Framework.plist  pkg-support           SDL.xcodeproj         
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode/SDL/pkg-support:
+codesign-frameworks.sh  resources               SDL.info                sdl_logo.pdf            
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode/SDL/pkg-support/resources:
+License.txt   ReadMe.txt    SDL_DS_Store  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode/SDL/SDL.xcodeproj:
+project.pbxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode/SDLTest:
+SDLTest.xcodeproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode/SDLTest/SDLTest.xcodeproj:
+project.pbxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode/XcodeDocSet:
+Doxyfile  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode-iOS:
+Demos     SDL       SDLtest   Template  
+Test      
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode-iOS/Demos:
+data             Default.png      Demos.xcodeproj  Icon.png         
+Info.plist       README           src              
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode-iOS/Demos/data:
+bitmapfont  drums       icon.bmp    ship.bmp    
+space.bmp   stroke.bmp  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode-iOS/Demos/data/bitmapfont:
+kromasky_16x16.bmp  license.txt         
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode-iOS/Demos/data/drums:
+ds_brush_snare.wav      ds_china.wav            ds_kick_big_amb.wav     ds_loose_skin_mute.wav  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode-iOS/Demos/Demos.xcodeproj:
+project.pbxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode-iOS/Demos/src:
+accelerometer.c  common.c         common.h         fireworks.c      
+happy.c          keyboard.c       mixer.c          rectangles.c     
+touch.c          
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode-iOS/SDL:
+SDL.xcodeproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode-iOS/SDL/SDL.xcodeproj:
+project.pbxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode-iOS/SDLtest:
+SDL2test.xcodeproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode-iOS/SDLtest/SDL2test.xcodeproj:
+project.pbxproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode-iOS/Template:
+SDL iOS Application  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode-iOS/Template/SDL iOS Application:
+Default.png                  Icon.png                     Info.plist                   main.c                       
+___PROJECTNAME___.xcodeproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode-iOS/Template/SDL iOS Application/___PROJECTNAME___.xcodeproj:
+project.pbxproj     TemplateIcon.icns   TemplateInfo.plist  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode-iOS/Test:
+Info.plist              README                  TestiPhoneOS.xcodeproj  
+
+/home/csmajs/amyll001/sdl/SDL2-2.0.1/Xcode-iOS/Test/TestiPhoneOS.xcodeproj:
+project.pbxproj  
+
+/home/csmajs/amyll001/shell:
+rshell  
+
+/home/csmajs/amyll001/shell/rshell:
+bin        LICENSE    Makefile   README.md  
+src        
+
+/home/csmajs/amyll001/shell/rshell/bin:
+rshell  
+
+/home/csmajs/amyll001/shell/rshell/src:
+main.cpp  
+
+/home/csmajs/amyll001/Templates:
+
+/home/csmajs/amyll001/ucr-cs100:
+assignments  GRADES.md    lecture      LICENSE      
+people       README.md    scripts      tutorials    
+
+/home/csmajs/amyll001/ucr-cs100/assignments:
+ec     hw     lab    linux  
+quiz   
+
+/home/csmajs/amyll001/ucr-cs100/assignments/ec:
+ec-bounty   ec-online   ec-reading  ec-vim      
+
+/home/csmajs/amyll001/ucr-cs100/assignments/ec/ec-bounty:
+grade      README.md  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/ec/ec-online:
+grade      README.md  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/ec/ec-reading:
+grade      README.md  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/ec/ec-vim:
+grade      README.md  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/hw:
+hw0-rshell        hw1-ls            hw2-piping        hw3-signals       
+hw4-contributing  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/hw/hw0-rshell:
+grade      README.md  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/hw/hw1-ls:
+grade      ls.cpp     README.md  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/hw/hw2-piping:
+grade      README.md  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/hw/hw3-signals:
+grade      README.md  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/hw/hw4-contributing:
+grade      README.md  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab:
+lab0-vim      lab1-git      lab2-fork     lab3-gdb      
+lab4-cstring  lab5-cp       lab6-signal   lab7-rm       
+lab8-spam     
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab0-vim:
+grade      README.md  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab1-git:
+git-cheatsheet.md  grade              images             README.md          
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab1-git/images:
+1.png              10.png             11.png             2.png              
+3.png              4.png              5.png              6.png              
+7.png              8.png              9.png              collaborators.png  
+fork.png           issues.png         pull_request.png   settings.png       
+summary.png        watch.png          
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab2-fork:
+grade      README.md  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb:
+coreutils-8.23        hbhairy-utils.tar.xz  README.md             
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23:
+ABOUT-NLS              aclocal.m4             AUTHORS                bootstrap              
+bootstrap.conf         build-aux              cfg.mk                 ChangeLog              
+ChangeLog-2005         ChangeLog-2006         ChangeLog-2007         ChangeLog-2008         
+config.log             config.status          configure              configure.ac           
+COPYING                dist-check.mk          doc                    gnulib-tests           
+GNUmakefile            init.cfg               INSTALL                lib                    
+m4                     maint.mk               Makefile               Makefile.am            
+Makefile.in            man                    NEWS                   old                    
+po                     README                 src                    tests                  
+THANKS                 thanks-gen             THANKS-to-translators  THANKS.in              
+THANKStt.in            TODO                   
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/build-aux:
+announce-gen               ChangeLog-2007             compile                    config.guess               
+config.rpath               config.sub                 depcomp                    do-release-commit-and-tag  
+gen-lists-of-programs.sh   gen-single-binary.sh       gendocs.sh                 git-version-gen            
+gitlog-to-changelog        gnu-web-doc-update         gnupload                   install-sh                 
+mdate-sh                   missing                    prefix-gnulib-mk           snippet                    
+test-driver                texinfo.tex                update-copyright           useless-if-before-free     
+vc-list-files              ylwrap                     
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/build-aux/snippet:
+arg-nonnull.h       c++defs.h           unused-parameter.h  warn-on-use.h       
+_Noreturn.h         
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/doc:
+ChangeLog-2007       constants.texi       coreutils.info       coreutils.texi       
+fdl.texi             local.mk             parse-datetime.texi  perm.texi            
+stamp-vti            version.texi         
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/gnulib-tests:
+accept.c                    arg-nonnull.h               at-func.c                   binary-io.c                 
+binary-io.h                 bind.c                      c++defs.h                   connect.c                   
+glthread                    gnulib.mk                   inet_pton.c                 infinity.h                  
+init.sh                     ioctl.c                     listen.c                    localename.c                
+localename.h                macros.h                    Makefile                    Makefile.am                 
+Makefile.in                 minus-zero.h                nan.h                       nap.h                       
+perror.c                    randomd.c                   randoml.c                   setlocale.c                 
+setsockopt.c                signature.h                 sleep.c                     socket.c                    
+strerror_r.c                symlinkat.c                 test-accept.c               test-alignof.c              
+test-alloca-opt.c           test-areadlink-with-size.c  test-areadlink.c            test-areadlink.h            
+test-areadlinkat.c          test-argmatch.c             test-argv-iter.c            test-arpa_inet.c            
+test-base64.c               test-binary-io.c            test-binary-io.sh           test-bind.c                 
+test-bitrotate.c            test-btowc.c                test-btowc1.sh              test-btowc2.sh              
+test-c-ctype.c              test-c-strcase.sh           test-c-strcasecmp.c         test-c-strncasecmp.c        
+test-calloc-gnu.c           test-canonicalize.c         test-chdir.c                test-chown.c                
+test-chown.h                test-cloexec.c              test-close.c                test-closein.c              
+test-closein.sh             test-connect.c              test-copy-acl-1.sh          test-copy-acl-2.sh          
+test-copy-acl.c             test-copy-acl.sh            test-ctype.c                test-di-set.c               
+test-dirent-safer.c         test-dirent.c               test-dirname.c              test-dup-safer.c            
+test-dup.c                  test-dup2.c                 test-environ.c              test-errno.c                
+test-exclude.c              test-exclude1.sh            test-exclude2.sh            test-exclude3.sh            
+test-exclude4.sh            test-exclude5.sh            test-exclude6.sh            test-exclude7.sh            
+test-exclude8.sh            test-faccessat.c            test-fadvise.c              test-fchdir.c               
+test-fchmodat.c             test-fchownat.c             test-fclose.c               test-fcntl-h.c              
+test-fcntl-safer.c          test-fcntl.c                test-fdatasync.c            test-fdopen.c               
+test-fdopendir.c            test-fdutimensat.c          test-fflush.c               test-fflush2.c              
+test-fflush2.sh             test-fgetc.c                test-file-has-acl-1.sh      test-file-has-acl-2.sh      
+test-file-has-acl.c         test-file-has-acl.sh        test-filenamecat.c          test-filevercmp.c           
+test-float.c                test-fnmatch.c              test-fopen-safer.c          test-fopen.c                
+test-fopen.h                test-fpending.c             test-fpending.sh            test-fprintf-posix.h        
+test-fpurge.c               test-fputc.c                test-fread.c                test-freadahead.c           
+test-freadahead.sh          test-freading.c             test-freadptr.c             test-freadptr.sh            
+test-freadptr2.c            test-freadptr2.sh           test-freadseek.c            test-freadseek.sh           
+test-freopen-safer.c        test-freopen.c              test-frexp.c                test-frexp.h                
+test-frexpl.c               test-fseek.c                test-fseek.sh               test-fseek2.sh              
+test-fseeko.c               test-fseeko.sh              test-fseeko2.sh             test-fseeko3.c              
+test-fseeko3.sh             test-fseeko4.c              test-fseeko4.sh             test-fseterr.c              
+test-fstat.c                test-fstatat.c              test-fsync.c                test-ftell.c                
+test-ftell.sh               test-ftell2.sh              test-ftell3.c               test-ftello.c               
+test-ftello.sh              test-ftello2.sh             test-ftello3.c              test-ftello4.c              
+test-ftello4.sh             test-ftruncate.c            test-ftruncate.sh           test-futimens.c             
+test-futimens.h             test-fwrite.c               test-getaddrinfo.c          test-getcwd-lgpl.c          
+test-getcwd.c               test-getcwd.sh              test-getdelim.c             test-getdtablesize.c        
+test-getgroups.c            test-gethostname.c          test-getline.c              test-getloadavg.c           
+test-getlogin.c             test-getndelim2.c           test-getopt.c               test-getopt.h               
+test-getopt_long.h          test-gettimeofday.c         test-hash.c                 test-i-ring.c               
+test-iconv-h.c              test-iconv.c                test-ignore-value.c         test-inet_ntop.c            
+test-inet_pton.c            test-init.sh                test-ino-map.c              test-intprops.c             
+test-inttostr.c             test-inttypes.c             test-ioctl.c                test-isatty.c               
+test-isblank.c              test-isnand-nolibm.c        test-isnand.h               test-isnanf-nolibm.c        
+test-isnanf.h               test-isnanl-nolibm.c        test-isnanl.h               test-iswblank.c             
+test-langinfo.c             test-lchown.c               test-lchown.h               test-link.c                 
+test-link.h                 test-linkat.c               test-listen.c               test-locale.c               
+test-localeconv.c           test-localename.c           test-lock.c                 test-lseek.c                
+test-lseek.sh               test-lstat.c                test-lstat.h                test-lutimens.h             
+test-malloc-gnu.c           test-malloca.c              test-math.c                 test-mbrtowc-w32-1.sh       
+test-mbrtowc-w32-2.sh       test-mbrtowc-w32-3.sh       test-mbrtowc-w32-4.sh       test-mbrtowc-w32-5.sh       
+test-mbrtowc-w32.c          test-mbrtowc.c              test-mbrtowc1.sh            test-mbrtowc2.sh            
+test-mbrtowc3.sh            test-mbrtowc4.sh            test-mbsalign.c             test-mbscasecmp.c           
+test-mbscasecmp.sh          test-mbsinit.c              test-mbsinit.sh             test-mbsrtowcs.c            
+test-mbsrtowcs1.sh          test-mbsrtowcs2.sh          test-mbsrtowcs3.sh          test-mbsrtowcs4.sh          
+test-mbsstr1.c              test-mbsstr2.c              test-mbsstr2.sh             test-mbsstr3.c              
+test-mbsstr3.sh             test-md5.c                  test-memcasecmp.c           test-memchr.c               
+test-memchr2.c              test-memcoll.c              test-memrchr.c              test-mkdir.c                
+test-mkdir.h                test-mkfifo.c               test-mkfifo.h               test-mknod.c                
+test-nanosleep.c            test-netdb.c                test-netinet_in.c           test-nl_langinfo.c          
+test-nl_langinfo.sh         test-open.c                 test-open.h                 test-openat-safer.c         
+test-openat.c               test-parse-datetime.c       test-pathmax.c              test-perror.c               
+test-perror.sh              test-perror2.c              test-pipe.c                 test-posixtm.c              
+test-printf-frexp.c         test-printf-frexpl.c        test-printf-posix.h         test-printf-posix.output    
+test-priv-set.c             test-quotearg-simple.c      test-quotearg.h             test-raise.c                
+test-rand-isaac.c           test-read-file.c            test-read.c                 test-readlink.c             
+test-readlink.h             test-readlinkat.c           test-readtokens.c           test-readtokens.sh          
+test-realloc-gnu.c          test-regex.c                test-remove.c               test-rename.c               
+test-rename.h               test-rmdir.c                test-rmdir.h                test-sameacls.c             
+test-sched.c                test-select-fd.c            test-select-in.sh           test-select-out.sh          
+test-select-stdin.c         test-select.c               test-select.h               test-set-mode-acl-1.sh      
+test-set-mode-acl-2.sh      test-set-mode-acl.c         test-set-mode-acl.sh        test-setenv.c               
+test-setlocale1.c           test-setlocale1.sh          test-setlocale2.c           test-setlocale2.sh          
+test-setsockopt.c           test-sha1.c                 test-sigaction.c            test-signal-h.c             
+test-signbit.c              test-sigprocmask.c          test-sleep.c                test-snprintf.c             
+test-sockets.c              test-stat-time.c            test-stat.c                 test-stat.h                 
+test-statat.c               test-stdalign.c             test-stdbool.c              test-stddef.c               
+test-stdint.c               test-stdio.c                test-stdlib.c               test-strerror.c             
+test-strerror_r.c           test-strftime.c             test-striconv.c             test-string.c               
+test-strncat.c              test-strnlen.c              test-strsignal.c            test-strtod.c               
+test-strtoimax.c            test-strtoll.c              test-strtoull.c             test-strtoumax.c            
+test-symlink.c              test-symlink.h              test-symlinkat.c            test-sys_ioctl.c            
+test-sys_resource.c         test-sys_select.c           test-sys_socket.c           test-sys_stat.c             
+test-sys_time.c             test-sys_types.c            test-sys_uio.c              test-sys_utsname.c          
+test-sys_wait.c             test-sys_wait.h             test-termios.c              test-thread_create.c        
+test-thread_self.c          test-time.c                 test-tls.c                  test-u64.c                  
+test-uname.c                test-unistd.c               test-unlink.c               test-unlink.h               
+test-unlinkat.c             test-unsetenv.c             test-update-copyright.sh    test-userspec.c             
+test-utimens-common.h       test-utimens.c              test-utimens.h              test-utimensat.c            
+test-vasnprintf.c           test-vasprintf-posix.c      test-vasprintf.c            test-vc-list-files-cvs.sh   
+test-vc-list-files-git.sh   test-verify.c               test-verify.sh              test-version-etc.c          
+test-version-etc.sh         test-vfprintf-posix.c       test-vfprintf-posix.sh      test-vprintf-posix.c        
+test-vprintf-posix.sh       test-wchar.c                test-wcrtomb-w32-1.sh       test-wcrtomb-w32-2.sh       
+test-wcrtomb-w32-3.sh       test-wcrtomb-w32-4.sh       test-wcrtomb-w32-5.sh       test-wcrtomb-w32.c          
+test-wcrtomb.c              test-wcrtomb.sh             test-wctype-h.c             test-wcwidth.c              
+test-write.c                test-xalloc-die.c           test-xalloc-die.sh          test-xfprintf-posix.c       
+test-xprintf-posix.c        test-xprintf-posix.sh       test-xstrtoimax.c           test-xstrtoimax.sh          
+test-xstrtol.c              test-xstrtol.sh             test-xstrtoul.c             test-xstrtoumax.c           
+test-xstrtoumax.sh          test-xvasprintf.c           test-yesno.c                test-yesno.sh               
+unistr                      uniwidth                    unlinkdir.c                 unlinkdir.h                 
+unused-parameter.h          w32sock.h                   warn-on-use.h               wctob.c                     
+wctomb-impl.h               wctomb.c                    zerosize-ptr.h              
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/gnulib-tests/glthread:
+thread.c  thread.h  yield.h   
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/gnulib-tests/unistr:
+test-strncat.h     test-u8-mbtoucr.c  test-u8-uctomb.c   
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/gnulib-tests/uniwidth:
+test-uc_width.c    test-uc_width2.c   test-uc_width2.sh  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/lib:
+acl-errno-valid.c         acl-errno-valid.o         acl-internal.h            acl.h                     
+acl_entries.c             alignof.h                 alloca.c                  alloca.h                  
+alloca.in.h               allocator.c               allocator.h               allocator.o               
+anytostr.c                areadlink-with-size.c     areadlink-with-size.o     areadlink.c               
+areadlink.h               areadlink.o               areadlinkat.c             areadlinkat.o             
+arg-nonnull.h             argmatch.c                argmatch.h                argmatch.o                
+argv-iter.c               argv-iter.h               argv-iter.o               arpa                      
+arpa_inet.in.h            asnprintf.c               asnprintf.o               asprintf.c                
+asprintf.o                at-func.c                 at-func2.c                backupfile.c              
+backupfile.h              backupfile.o              base64.c                  base64.h                  
+base64.o                  basename-lgpl.c           basename-lgpl.o           basename.c                
+basename.o                bitrotate.c               bitrotate.h               bitrotate.o               
+btowc.c                   buffer-lcm.c              buffer-lcm.h              buffer-lcm.o              
+c++defs.h                 c-ctype.c                 c-ctype.h                 c-ctype.o                 
+c-strcase.h               c-strcasecmp.c            c-strcasecmp.o            c-strcaseeq.h             
+c-strncasecmp.c           c-strncasecmp.o           c-strtod.c                c-strtod.h                
+c-strtod.o                c-strtold.c               c-strtold.o               calloc.c                  
+canon-host.c              canon-host.h              canon-host.o              canonicalize.c            
+canonicalize.h            canonicalize.o            careadlinkat.c            careadlinkat.h            
+careadlinkat.o            ChangeLog-2007            charset.alias             chdir-long.c              
+chdir-long.h              chdir-long.o              chmodat.c                 chmodat.o                 
+chown.c                   chownat.c                 chownat.o                 cloexec.c                 
+cloexec.h                 cloexec.o                 close-stream.c            close-stream.h            
+close-stream.o            close.c                   closedir.c                closein.c                 
+closein.h                 closein.o                 closeout.c                closeout.h                
+closeout.o                config.charset            config.h                  config.hin                
+configmake.h              copy-acl.c                copy-acl.o                creat-safer.c             
+creat-safer.o             ctype.h                   ctype.in.h                cycle-check.c             
+cycle-check.h             cycle-check.o             dev-ino.h                 di-set.c                  
+di-set.h                  di-set.o                  diacrit.c                 diacrit.h                 
+diacrit.o                 dirchownmod.c             dirchownmod.h             dirchownmod.o             
+dirent--.h                dirent-private.h          dirent-safer.h            dirent.h                  
+dirent.in.h               dirfd.c                   dirname-lgpl.c            dirname-lgpl.o            
+dirname.c                 dirname.h                 dirname.o                 dosname.h                 
+dtoastr.c                 dtoastr.o                 dtotimespec.c             dtotimespec.o             
+dup-safer-flag.c          dup-safer-flag.o          dup-safer.c               dup-safer.o               
+dup.c                     dup2.c                    errno.in.h                error.c                   
+error.h                   euidaccess.c              exclude.c                 exclude.h                 
+exclude.o                 exitfail.c                exitfail.h                exitfail.o                
+faccessat.c               fadvise.c                 fadvise.h                 fadvise.o                 
+fchdir.c                  fchmodat.c                fchown-stub.c             fchownat.c                
+fclose.c                  fclose.o                  fcntl--.h                 fcntl-safer.h             
+fcntl.c                   fcntl.h                   fcntl.in.h                fcntl.o                   
+fd-hook.c                 fd-hook.h                 fd-hook.o                 fd-reopen.c               
+fd-reopen.h               fd-reopen.o               fd-safer-flag.c           fd-safer-flag.o           
+fd-safer.c                fd-safer.o                fdatasync.c               fdopen.c                  
+fdopendir.c               fdutimensat.c             fdutimensat.o             fflush.c                  
+fflush.o                  file-has-acl.c            file-has-acl.o            file-set.c                
+file-set.h                file-set.o                file-type.c               file-type.h               
+file-type.o               fileblocks.c              filemode.c                filemode.h                
+filemode.o                filename.h                filenamecat-lgpl.c        filenamecat-lgpl.o        
+filenamecat.c             filenamecat.h             filenamecat.o             filevercmp.c              
+filevercmp.h              filevercmp.o              float+.h                  float.c                   
+float.in.h                fnmatch.c                 fnmatch.h                 fnmatch.in.h              
+fnmatch.o                 fnmatch_loop.c            fopen-safer.c             fopen-safer.o             
+fopen.c                   fpending.c                fpending.h                fprintftime.c             
+fprintftime.h             fprintftime.o             fpucw.h                   fpurge.c                  
+fpurge.o                  freadahead.c              freadahead.h              freadahead.o              
+freading.c                freading.h                freading.o                freadptr.c                
+freadptr.h                freadptr.o                freadseek.c               freadseek.h               
+freadseek.o               freopen-safer.c           freopen-safer.o           freopen.c                 
+frexp.c                   frexpl.c                  fseek.c                   fseek.o                   
+fseeko.c                  fseeko.o                  fseterr.c                 fseterr.h                 
+fseterr.o                 fstat.c                   fstatat.c                 fsusage.c                 
+fsusage.h                 fsusage.o                 fsync.c                   ftell.c                   
+ftello.c                  ftoastr.c                 ftoastr.h                 ftoastr.o                 
+ftruncate.c               fts-cycle.c               fts.c                     fts.o                     
+fts_.h                    full-read.c               full-read.h               full-read.o               
+full-write.c              full-write.h              full-write.o              futimens.c                
+futimens.o                gai_strerror.c            getaddrinfo.c             getcwd-lgpl.c             
+getcwd-lgpl.o             getcwd.c                  getcwd.o                  getdelim.c                
+getdtablesize.c           getfilecon.c              getfilecon.o              getgroups.c               
+gethostname.c             gethrxtime.c              gethrxtime.h              gethrxtime.o              
+getline.c                 getloadavg.c              getlogin.c                getndelim2.c              
+getndelim2.h              getndelim2.o              getopt.c                  getopt.h                  
+getopt.in.h               getopt.o                  getopt1.c                 getopt1.o                 
+getopt_int.h              getpagesize.c             getpass.c                 getpass.h                 
+getpass.o                 gettext.h                 gettime.c                 gettime.o                 
+gettimeofday.c            getugroups.c              getugroups.h              getugroups.o              
+getusershell.c            glthread                  gl_openssl.h              gnulib.mk                 
+group-member.c            hard-locale.c             hard-locale.h             hard-locale.o             
+hash-pjw.c                hash-pjw.h                hash-pjw.o                hash-triple.c             
+hash-triple.h             hash-triple.o             hash.c                    hash.h                    
+hash.o                    heap.c                    heap.h                    heap.o                    
+human.c                   human.h                   human.o                   i-ring.c                  
+i-ring.h                  i-ring.o                  iconv.c                   iconv.h                   
+iconv.in.h                iconv_close.c             iconv_open-aix.gperf      iconv_open-aix.h          
+iconv_open-hpux.gperf     iconv_open-hpux.h         iconv_open-irix.gperf     iconv_open-irix.h         
+iconv_open-osf.gperf      iconv_open-osf.h          iconv_open-solaris.gperf  iconv_open-solaris.h      
+iconv_open.c              idcache.c                 idcache.h                 idcache.o                 
+ignore-value.h            imaxtostr.c               imaxtostr.o               inet_ntop.c               
+ino-map.c                 ino-map.h                 ino-map.o                 intprops.h                
+inttostr.c                inttostr.h                inttostr.o                inttypes.h                
+inttypes.in.h             isapipe.c                 isapipe.h                 isapipe.o                 
+isatty.c                  isblank.c                 isnan.c                   isnand-nolibm.h           
+isnand.c                  isnanf-nolibm.h           isnanf.c                  isnanl-nolibm.h           
+isnanl.c                  isnanl.o                  iswblank.c                itold.c                   
+langinfo.h                langinfo.in.h             lchown.c                  ldtoastr.c                
+ldtoastr.o                libcoreutils.a            linebuffer.c              linebuffer.h              
+linebuffer.o              link.c                    linkat.c                  linkat.o                  
+local.mk                  localcharset.c            localcharset.h            localcharset.o            
+locale.h                  locale.in.h               localeconv.c              long-options.c            
+long-options.h            long-options.o            lseek.c                   lstat.c                   
+malloc.c                  malloca.c                 malloca.h                 malloca.o                 
+malloca.valgrind          math.c                    math.h                    math.in.h                 
+math.o                    mbchar.c                  mbchar.h                  mbchar.o                  
+mbiter.c                  mbiter.h                  mbiter.o                  mbrlen.c                  
+mbrlen.o                  mbrtowc.c                 mbrtowc.o                 mbsalign.c                
+mbsalign.h                mbsalign.o                mbscasecmp.c              mbscasecmp.o              
+mbsinit.c                 mbslen.c                  mbslen.o                  mbsrtowcs-impl.h          
+mbsrtowcs-state.c         mbsrtowcs.c               mbsstr.c                  mbsstr.o                  
+mbswidth.c                mbswidth.h                mbswidth.o                mbtowc-impl.h             
+mbtowc.c                  mbuiter.c                 mbuiter.h                 mbuiter.o                 
+md5.c                     md5.h                     md5.o                     memcasecmp.c              
+memcasecmp.h              memcasecmp.o              memchr.c                  memchr.valgrind           
+memchr2.c                 memchr2.h                 memchr2.o                 memchr2.valgrind          
+memcmp2.c                 memcmp2.h                 memcmp2.o                 memcoll.c                 
+memcoll.h                 memcoll.o                 mempcpy.c                 memrchr.c                 
+mgetgroups.c              mgetgroups.h              mgetgroups.o              mkancesdirs.c             
+mkancesdirs.h             mkancesdirs.o             mkdir-p.c                 mkdir-p.h                 
+mkdir-p.o                 mkdir.c                   mkfifo.c                  mknod.c                   
+mkstemp-safer.c           mkstemp-safer.o           mkstemp.c                 mktime-internal.h         
+mktime.c                  modechange.c              modechange.h              modechange.o              
+mountlist.c               mountlist.h               mountlist.o               mpsort.c                  
+mpsort.h                  mpsort.o                  msvc-inval.c              msvc-inval.h              
+msvc-nothrow.c            msvc-nothrow.h            nanosleep.c               nanosleep.o               
+netdb.h                   netdb.in.h                netinet_in.in.h           nl_langinfo.c             
+nproc.c                   nproc.h                   nproc.o                   obstack.c                 
+obstack.h                 offtostr.c                offtostr.o                open-safer.c              
+open-safer.o              open.c                    openat-die.c              openat-die.o              
+openat-priv.h             openat-proc.c             openat-proc.o             openat-safer.c            
+openat-safer.o            openat.c                  openat.h                  opendir-safer.c           
+opendir-safer.o           opendir.c                 parse-datetime.c          parse-datetime.h          
+parse-datetime.o          parse-datetime.y          pathmax.h                 physmem.c                 
+physmem.h                 physmem.o                 pipe-safer.c              pipe-safer.o              
+pipe.c                    posixtm.c                 posixtm.h                 posixtm.o                 
+posixver.c                posixver.h                posixver.o                printf-args.c             
+printf-args.h             printf-args.o             printf-frexp.c            printf-frexp.h            
+printf-frexp.o            printf-frexpl.c           printf-frexpl.h           printf-frexpl.o           
+printf-parse.c            printf-parse.h            printf-parse.o            priv-set.c                
+priv-set.h                priv-set.o                progname.c                progname.h                
+progname.o                propername.c              propername.h              propername.o              
+pthread.c                 pthread.in.h              putenv.c                  qcopy-acl.c               
+qcopy-acl.o               qset-acl.c                qset-acl.o                quote.h                   
+quotearg.c                quotearg.h                quotearg.o                raise.c                   
+rand-isaac.c              rand-isaac.h              rand-isaac.o              randint.c                 
+randint.h                 randint.o                 randperm.c                randperm.h                
+randperm.o                randread.c                randread.h                randread.o                
+read-file.c               read-file.h               read-file.o               read.c                    
+readdir.c                 readlink.c                readlinkat.c              readtokens.c              
+readtokens.h              readtokens.o              readtokens0.c             readtokens0.h             
+readtokens0.o             readutmp.c                readutmp.h                readutmp.o                
+realloc.c                 ref-add.sed               ref-add.sin               ref-del.sed               
+ref-del.sin               regcomp.c                 regex.c                   regex.h                   
+regexec.c                 regex_internal.c          regex_internal.h          remove.c                  
+rename.c                  rewinddir.c               rmdir.c                   root-dev-ino.c            
+root-dev-ino.h            root-dev-ino.o            root-uid.h                rpmatch.c                 
+safe-read.c               safe-read.h               safe-read.o               safe-write.c              
+safe-write.h              safe-write.o              same-inode.h              same.c                    
+same.h                    same.o                    save-cwd.c                save-cwd.h                
+save-cwd.o                savedir.c                 savedir.h                 savedir.o                 
+savewd.c                  savewd.h                  savewd.o                  sched.in.h                
+se-context.c              se-context.in.h           se-context.o              se-selinux.c              
+se-selinux.in.h           se-selinux.o              secure_getenv.c           secure_getenv.o           
+select.c                  selinux                   selinux-at.c              selinux-at.h              
+selinux-at.o              set-acl.c                 set-acl.o                 setenv.c                  
+settime.c                 settime.o                 sha1.c                    sha1.h                    
+sha1.o                    sha256.c                  sha256.h                  sha256.o                  
+sha512.c                  sha512.h                  sha512.o                  sig-handler.c             
+sig-handler.h             sig-handler.o             sig2str.c                 sig2str.h                 
+sig2str.o                 sigaction.c               siglist.h                 signal.h                  
+signal.in.h               signbitd.c                signbitf.c                signbitl.c                
+sigprocmask.c             size_max.h                smack.h                   snprintf.c                
+sockets.c                 sockets.h                 sockets.o                 stamp-h1                  
+stat-macros.h             stat-size.h               stat-time.c               stat-time.h               
+stat-time.o               stat.c                    statat.c                  statat.o                  
+stdalign.in.h             stdarg.in.h               stdbool.in.h              stddef.in.h               
+stdint.in.h               stdio--.h                 stdio-impl.h              stdio-safer.h             
+stdio.h                   stdio.in.h                stdlib--.h                stdlib-safer.h            
+stdlib.h                  stdlib.in.h               stpcpy.c                  stpncpy.c                 
+str-kmp.h                 str-two-way.h             strdup.c                  streq.h                   
+strerror-override.c       strerror-override.h       strerror.c                strerror.o                
+strftime.c                strftime.h                strftime.o                striconv.c                
+striconv.h                striconv.o                string.h                  string.in.h               
+strintcmp.c               strintcmp.o               stripslash.c              stripslash.o              
+strncat.c                 strndup.c                 strnlen.c                 strnlen1.c                
+strnlen1.h                strnlen1.o                strnumcmp-in.h            strnumcmp.c               
+strnumcmp.h               strnumcmp.o               strpbrk.c                 strsignal.c               
+strstr.c                  strtod.c                  strtoimax.c               strtol.c                  
+strtoll.c                 strtoul.c                 strtoull.c                strtoumax.c               
+symlink.c                 sys                       sys_ioctl.in.h            sys_resource.in.h         
+sys_select.in.h           sys_socket.c              sys_socket.in.h           sys_socket.o              
+sys_stat.in.h             sys_time.in.h             sys_types.in.h            sys_uio.in.h              
+sys_utsname.in.h          sys_wait.in.h             tempname.c                tempname.h                
+tempname.o                termios.h                 termios.in.h              time.h                    
+time.in.h                 timespec.c                timespec.h                timespec.o                
+time_r.c                  trim.c                    trim.h                    trim.o                    
+u64.c                     u64.h                     u64.o                     uinttostr.c               
+uinttostr.o               umaxtostr.c               umaxtostr.o               uname.c                   
+unicodeio.c               unicodeio.h               unicodeio.o               unistd--.h                
+unistd-safer.h            unistd.c                  unistd.h                  unistd.in.h               
+unistd.o                  unistr                    unistr.h                  unistr.in.h               
+unitypes.h                unitypes.in.h             uniwidth                  uniwidth.h                
+uniwidth.in.h             unlink.c                  unlinkat.c                unlocked-io.h             
+unsetenv.c                unused-parameter.h        userspec.c                userspec.h                
+userspec.o                utimecmp.c                utimecmp.h                utimecmp.o                
+utimens.c                 utimens.h                 utimens.o                 utimensat.c               
+utimensat.o               vasnprintf.c              vasnprintf.h              vasnprintf.o              
+vasprintf.c               vasprintf.o               verify.h                  verror.c                  
+verror.h                  verror.o                  version-etc-fsf.c         version-etc-fsf.o         
+version-etc.c             version-etc.h             version-etc.o             vfprintf.c                
+vfprintf.o                vprintf.c                 vprintf.o                 w32sock.h                 
+warn-on-use.h             wchar.h                   wchar.in.h                wcrtomb.c                 
+wcswidth-impl.h           wcswidth.c                wctype-h.c                wctype-h.o                
+wctype.h                  wctype.in.h               wcwidth.c                 write-any-file.c          
+write-any-file.h          write-any-file.o          write.c                   xalloc-die.c              
+xalloc-die.o              xalloc-oversized.h        xalloc.h                  xasprintf.c               
+xasprintf.o               xfreopen.c                xfreopen.h                xfreopen.o                
+xfts.c                    xfts.h                    xfts.o                    xgetcwd.c                 
+xgetcwd.h                 xgetcwd.o                 xgetgroups.c              xgetgroups.o              
+xgethostname.c            xgethostname.h            xgethostname.o            xmalloc.c                 
+xmalloc.o                 xmemcoll.c                xmemcoll.h                xmemcoll.o                
+xnanosleep.c              xnanosleep.h              xnanosleep.o              xprintf.c                 
+xprintf.h                 xprintf.o                 xreadlink.c               xreadlink.h               
+xreadlink.o               xsize.c                   xsize.h                   xsize.o                   
+xstriconv.c               xstriconv.h               xstriconv.o               xstrndup.c                
+xstrndup.h                xstrndup.o                xstrtod.c                 xstrtod.h                 
+xstrtod.o                 xstrtoimax.c              xstrtoimax.o              xstrtol-error.c           
+xstrtol-error.o           xstrtol.c                 xstrtol.h                 xstrtol.o                 
+xstrtold.c                xstrtold.o                xstrtoul.c                xstrtoul.o                
+xstrtoumax.c              xstrtoumax.o              xtime.c                   xtime.h                   
+xtime.o                   xvasprintf.c              xvasprintf.h              xvasprintf.o              
+yesno.c                   yesno.h                   yesno.o                   
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/lib/arpa:
+inet.h  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/lib/glthread:
+lock.c       lock.h       lock.o       threadlib.c  
+threadlib.o  tls.c        tls.h        tls.o        
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/lib/selinux:
+selinux.h  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/lib/sys:
+ioctl.h     resource.h  select.h    socket.h    
+stat.h      time.h      types.h     uio.h       
+utsname.h   wait.h      
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/lib/unistr:
+u8-mbtoucr.c     u8-mbtoucr.o     u8-uctomb-aux.c  u8-uctomb-aux.o  
+u8-uctomb.c      u8-uctomb.o      
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/lib/uniwidth:
+cjk.h    width.c  width.o  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/m4:
+00gnulib.m4                          absolute-header.m4                   acl.m4                               alloca.m4                            
+arpa_inet_h.m4                       assert.m4                            autobuild.m4                         backupfile.m4                        
+base64.m4                            bison.m4                             boottime.m4                          btowc.m4                             
+c-strtod.m4                          calloc.m4                            canon-host.m4                        canonicalize.m4                      
+ChangeLog-2007                       chdir-long.m4                        check-decl.m4                        chown.m4                             
+clock_time.m4                        close-stream.m4                      close.m4                             closedir.m4                          
+closein.m4                           closeout.m4                          codeset.m4                           config-h.m4                          
+configmake.m4                        ctype.m4                             cu-progs.m4                          cycle-check.m4                       
+d-ino.m4                             d-type.m4                            dirent-safer.m4                      dirent_h.m4                          
+dirfd.m4                             dirname.m4                           double-slash-root.m4                 dup.m4                               
+dup2.m4                              eealloc.m4                           environ.m4                           errno_h.m4                           
+error.m4                             euidaccess.m4                        exponentd.m4                         exponentf.m4                         
+exponentl.m4                         extensions.m4                        extern-inline.m4                     faccessat.m4                         
+fchdir.m4                            fchmodat.m4                          fchownat.m4                          fclose.m4                            
+fcntl-o.m4                           fcntl-safer.m4                       fcntl.m4                             fcntl_h.m4                           
+fdatasync.m4                         fdopen.m4                            fdopendir.m4                         fflush.m4                            
+fileblocks.m4                        filemode.m4                          filenamecat.m4                       flexmember.m4                        
+float_h.m4                           fnmatch.m4                           fopen.m4                             fpending.m4                          
+fpieee.m4                            fpurge.m4                            freadahead.m4                        freading.m4                          
+freadptr.m4                          freadseek.m4                         freopen.m4                           frexp.m4                             
+frexpl.m4                            fseek.m4                             fseeko.m4                            fseterr.m4                           
+fstat.m4                             fstatat.m4                           fstypename.m4                        fsusage.m4                           
+fsync.m4                             ftell.m4                             ftello.m4                            ftruncate.m4                         
+fts.m4                               futimens.m4                          getaddrinfo.m4                       getcwd-abort-bug.m4                  
+getcwd-path-max.m4                   getcwd.m4                            getdelim.m4                          getdtablesize.m4                     
+getgroups.m4                         gethostname.m4                       gethrxtime.m4                        getline.m4                           
+getloadavg.m4                        getlogin.m4                          getndelim2.m4                        getopt.m4                            
+getpagesize.m4                       getpass.m4                           gettext.m4                           gettime.m4                           
+gettimeofday.m4                      getugroups.m4                        getusershell.m4                      gl-openssl.m4                        
+glibc21.m4                           gmp.m4                               gnu-make.m4                          gnulib-common.m4                     
+gnulib-comp.m4                       group-member.m4                      hard-locale.m4                       host-os.m4                           
+hostent.m4                           human.m4                             i-ring.m4                            iconv.m4                             
+iconv_h.m4                           iconv_open.m4                        idcache.m4                           include-exclude-prog.m4              
+include_next.m4                      inet_ntop.m4                         inet_pton.m4                         inline.m4                            
+intlmacosx.m4                        intmax_t.m4                          inttostr.m4                          inttypes-pri.m4                      
+inttypes.m4                          inttypes_h.m4                        ioctl.m4                             isapipe.m4                           
+isatty.m4                            isblank.m4                           isnand.m4                            isnanf.m4                            
+isnanl.m4                            iswblank.m4                          jm-macros.m4                         jm-winsz1.m4                         
+jm-winsz2.m4                         langinfo_h.m4                        largefile.m4                         lchmod.m4                            
+lchown.m4                            lcmessage.m4                         ldexp.m4                             ldexpl.m4                            
+lib-ignore.m4                        lib-ld.m4                            lib-link.m4                          lib-prefix.m4                        
+libunistring-base.m4                 link-follow.m4                       link.m4                              linkat.m4                            
+localcharset.m4                      locale-fr.m4                         locale-ja.m4                         locale-tr.m4                         
+locale-zh.m4                         localeconv.m4                        localename.m4                        locale_h.m4                          
+lock.m4                              longlong.m4                          ls-mntd-fs.m4                        lseek.m4                             
+lstat.m4                             malloc.m4                            malloca.m4                           manywarnings.m4                      
+math_h.m4                            mbchar.m4                            mbiter.m4                            mbrlen.m4                            
+mbrtowc.m4                           mbsinit.m4                           mbslen.m4                            mbsrtowcs.m4                         
+mbstate_t.m4                         mbswidth.m4                          mbtowc.m4                            md5.m4                               
+memcasecmp.m4                        memchr.m4                            memcoll.m4                           mempcpy.m4                           
+memrchr.m4                           mgetgroups.m4                        mkancesdirs.m4                       mkdir-p.m4                           
+mkdir.m4                             mkfifo.m4                            mknod.m4                             mkstemp.m4                           
+mktime.m4                            mmap-anon.m4                         modechange.m4                        mode_t.m4                            
+mountlist.m4                         mpsort.m4                            msvc-inval.m4                        msvc-nothrow.m4                      
+multiarch.m4                         nanosleep.m4                         netdb_h.m4                           netinet_in_h.m4                      
+nls.m4                               nl_langinfo.m4                       nocrash.m4                           non-recursive-gnulib-prefix-hack.m4  
+nproc.m4                             off_t.m4                             open.m4                              openat.m4                            
+opendir.m4                           parse-datetime.m4                    pathmax.m4                           perl.m4                              
+perror.m4                            physmem.m4                           pipe.m4                              po.m4                                
+posix-shell.m4                       posixtm.m4                           posixver.m4                          prereq.m4                            
+printf-frexp.m4                      printf-frexpl.m4                     printf.m4                            priv-set.m4                          
+progtest.m4                          pthread.m4                           putenv.m4                            quote.m4                             
+quotearg.m4                          raise.m4                             read-file.m4                         read.m4                              
+readdir.m4                           readlink.m4                          readlinkat.m4                        readtokens.m4                        
+readutmp.m4                          realloc.m4                           regex.m4                             remove.m4                            
+rename.m4                            rewinddir.m4                         rmdir.m4                             rpmatch.m4                           
+safe-read.m4                         safe-write.m4                        same.m4                              save-cwd.m4                          
+savedir.m4                           savewd.m4                            sched_h.m4                           secure_getenv.m4                     
+select.m4                            selinux-context-h.m4                 selinux-selinux-h.m4                 servent.m4                           
+setenv.m4                            setlocale.m4                         settime.m4                           sha1.m4                              
+sha256.m4                            sha512.m4                            sig2str.m4                           sigaction.m4                         
+signalblocking.m4                    signal_h.m4                          signbit.m4                           size_max.m4                          
+sleep.m4                             snprintf.m4                          socketlib.m4                         sockets.m4                           
+socklen.m4                           sockpfaf.m4                          ssize_t.m4                           stat-prog.m4                         
+stat-size.m4                         stat-time.m4                         stat.m4                              stdalign.m4                          
+stdarg.m4                            stdbool.m4                           stddef_h.m4                          stdint.m4                            
+stdint_h.m4                          stdio_h.m4                           stdlib_h.m4                          stpcpy.m4                            
+stpncpy.m4                           strdup.m4                            strerror.m4                          strerror_r.m4                        
+strftime.m4                          string_h.m4                          strncat.m4                           strndup.m4                           
+strnlen.m4                           strpbrk.m4                           strsignal.m4                         strstr.m4                            
+strtod.m4                            strtoimax.m4                         strtoll.m4                           strtoull.m4                          
+strtoumax.m4                         st_dm_mode.m4                        symlink.m4                           symlinkat.m4                         
+sys_ioctl_h.m4                       sys_resource_h.m4                    sys_select_h.m4                      sys_socket_h.m4                      
+sys_stat_h.m4                        sys_time_h.m4                        sys_types_h.m4                       sys_uio_h.m4                         
+sys_utsname_h.m4                     sys_wait_h.m4                        tempname.m4                          termios_h.m4                         
+thread.m4                            threadlib.m4                         timer_time.m4                        timespec.m4                          
+time_h.m4                            time_r.m4                            tls.m4                               tm_gmtoff.m4                         
+tzset.m4                             uname.m4                             ungetc.m4                            unicodeio.m4                         
+unistd-safer.m4                      unistd_h.m4                          unlink-busy.m4                       unlink.m4                            
+unlinkat.m4                          unlinkdir.m4                         unlocked-io.m4                       uptime.m4                            
+userspec.m4                          utimbuf.m4                           utimecmp.m4                          utimens.m4                           
+utimensat.m4                         utimes.m4                            vasnprintf.m4                        vasprintf-posix.m4                   
+vasprintf.m4                         version-etc.m4                       vfprintf-posix.m4                    vprintf-posix.m4                     
+warnings.m4                          wchar_h.m4                           wchar_t.m4                           wcrtomb.m4                           
+wcswidth.m4                          wctob.m4                             wctomb.m4                            wctype_h.m4                          
+wcwidth.m4                           wint_t.m4                            write-any-file.m4                    write.m4                             
+xalloc.m4                            xattr.m4                             xgetcwd.m4                           xnanosleep.m4                        
+xsize.m4                             xstrndup.m4                          xstrtod.m4                           xstrtol.m4                           
+xvasprintf.m4                        yesno.m4                             yield.m4                             
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/man:
+arch.x           base64.1         base64.x         basename.1       
+basename.x       cat.1            cat.x            chcon.1          
+chcon.x          chgrp.1          chgrp.x          chmod.1          
+chmod.x          chown.1          chown.x          chroot.1         
+chroot.x         cksum.1          cksum.x          comm.1           
+comm.x           coreutils.x      cp.1             cp.x             
+csplit.1         csplit.x         cut.1            cut.x            
+date.1           date.x           dd.1             dd.x             
+df.1             df.x             dir.1            dir.x            
+dircolors.1      dircolors.x      dirname.1        dirname.x        
+du.1             du.x             dummy-man        dynamic-deps.mk  
+echo.1           echo.x           env.1            env.x            
+expand.1         expand.x         expr.1           expr.x           
+factor.1         factor.x         false.1          false.x          
+fmt.1            fmt.x            fold.1           fold.x           
+groups.1         groups.x         head.1           head.x           
+help2man         hostid.1         hostid.x         hostname.x       
+id.1             id.x             install.1        install.x        
+join.1           join.x           kill.1           kill.x           
+link.1           link.x           ln.1             ln.x             
+local.mk         logname.1        logname.x        ls.1             
+ls.x             md5sum.1         md5sum.x         mkdir.1          
+mkdir.x          mkfifo.1         mkfifo.x         mknod.1          
+mknod.x          mktemp.1         mktemp.x         mv.1             
+mv.x             nice.1           nice.x           nl.1             
+nl.x             nohup.1          nohup.x          nproc.1          
+nproc.x          numfmt.1         numfmt.x         od.1             
+od.x             paste.1          paste.x          pathchk.1        
+pathchk.x        pinky.1          pinky.x          pr.1             
+pr.x             printenv.1       printenv.x       printf.1         
+printf.x         ptx.1            ptx.x            pwd.1            
+pwd.x            readlink.1       readlink.x       realpath.1       
+realpath.x       rm.1             rm.x             rmdir.1          
+rmdir.x          runcon.1         runcon.x         seq.1            
+seq.x            sha1sum.1        sha1sum.x        sha224sum.1      
+sha224sum.x      sha256sum.1      sha256sum.x      sha384sum.1      
+sha384sum.x      sha512sum.1      sha512sum.x      shred.1          
+shred.x          shuf.1           shuf.x           sleep.1          
+sleep.x          sort.1           sort.x           split.1          
+split.x          stat.1           stat.x           stdbuf.1         
+stdbuf.x         stty.1           stty.x           sum.1            
+sum.x            sync.1           sync.x           tac.1            
+tac.x            tail.1           tail.x           tee.1            
+tee.x            test.1           test.x           timeout.1        
+timeout.x        touch.1          touch.x          tr.1             
+tr.x             true.1           true.x           truncate.1       
+truncate.x       tsort.1          tsort.x          tty.1            
+tty.x            uname.1          uname.x          unexpand.1       
+unexpand.x       uniq.1           uniq.x           unlink.1         
+unlink.x         uptime.1         uptime.x         users.1          
+users.x          vdir.1           vdir.x           wc.1             
+wc.x             who.1            who.x            whoami.1         
+whoami.x         yes.1            yes.x            
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/old:
+fileutils  sh-utils   textutils  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/old/fileutils:
+ChangeLog       ChangeLog-1997  NEWS            
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/old/sh-utils:
+ChangeLog    ChangeLog.0  NEWS         
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/old/textutils:
+ChangeLog  NEWS       
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/po:
+af.gmo               af.po                be.gmo               be.po                
+bg.gmo               bg.po                boldquot.sed         ca.gmo               
+ca.po                ChangeLog-2007       coreutils.pot        cs.gmo               
+cs.po                da.gmo               da.po                de.gmo               
+de.po                el.gmo               el.po                en@boldquot.header   
+en@quot.header       eo.gmo               eo.po                es.gmo               
+es.po                et.gmo               et.po                eu.gmo               
+eu.po                fi.gmo               fi.po                fr.gmo               
+fr.po                ga.gmo               ga.po                gl.gmo               
+gl.po                hr.gmo               hr.po                hu.gmo               
+hu.po                ia.gmo               ia.po                id.gmo               
+id.po                insert-header.sin    it.gmo               it.po                
+ja.gmo               ja.po                kk.gmo               kk.po                
+ko.gmo               ko.po                lg.gmo               lg.po                
+LINGUAS              lt.gmo               lt.po                Makefile             
+Makefile.in          Makefile.in.in       Makevars             ms.gmo               
+ms.po                nb.gmo               nb.po                nl.gmo               
+nl.po                pl.gmo               pl.po                POTFILES             
+POTFILES.in          pt.gmo               pt.po                pt_BR.gmo            
+pt_BR.po             quot.sed             remove-potcdate.sin  ro.gmo               
+ro.po                ru.gmo               ru.po                Rules-quot           
+sk.gmo               sk.po                sl.gmo               sl.po                
+stamp-po             sv.gmo               sv.po                tr.gmo               
+tr.po                uk.gmo               uk.po                vi.gmo               
+vi.po                zh_CN.gmo            zh_CN.po             zh_TW.gmo            
+zh_TW.po             
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/src:
+base64                        base64.c                      base64.o                      basename                      
+basename.c                    basename.o                    c99-to-c89.diff               cat                           
+cat.c                         cat.o                         chcon                         chcon.c                       
+chcon.o                       chgrp                         chgrp.c                       chgrp.o                       
+chmod                         chmod.c                       chmod.o                       chown                         
+chown-core.c                  chown-core.h                  chown-core.o                  chown.c                       
+chown.o                       chroot                        chroot.c                      chroot.o                      
+cksum                         cksum.c                       cksum.o                       comm                          
+comm.c                        comm.o                        copy.c                        copy.h                        
+copy.o                        coreutils-arch.c              coreutils-dir.c               coreutils-vdir.c              
+coreutils.c                   coreutils.h                   cp                            cp-hash.c                     
+cp-hash.h                     cp-hash.o                     cp.c                          cp.o                          
+csplit                        csplit.c                      csplit.o                      cu-progs.mk                   
+cut                           cut.c                         cut.o                         date                          
+date.c                        date.o                        dcgen                         dd                            
+dd.c                          dd.o                          df                            df.c                          
+df.o                          dir                           dircolors                     dircolors.c                   
+dircolors.h                   dircolors.hin                 dircolors.o                   dirname                       
+dirname.c                     dirname.o                     du                            du.c                          
+du.o                          echo                          echo.c                        echo.o                        
+env                           env.c                         env.o                         expand                        
+expand.c                      expand.o                      expr                          expr.c                        
+expr.o                        extent-scan.c                 extent-scan.h                 extent-scan.o                 
+extract-magic                 factor                        factor.c                      factor.o                      
+false                         false.c                       false.o                       fiemap.h                      
+find-mount-point.c            find-mount-point.h            find-mount-point.o            fmt                           
+fmt.c                         fmt.o                         fold                          fold.c                        
+fold.o                        fs-is-local.h                 fs.h                          getlimits                     
+getlimits.c                   getlimits.o                   ginstall                      group-list.c                  
+group-list.h                  group-list.o                  groups                        groups.c                      
+groups.o                      head                          head.c                        head.o                        
+hostid                        hostid.c                      hostid.o                      hostname.c                    
+id                            id.c                          id.o                          install.c                     
+ioblksize.h                   join                          join.c                        join.o                        
+kill                          kill.c                        kill.o                        lbracket.c                    
+lbracket.o                    libstdbuf.c                   libstdbuf.so                  libver.a                      
+link                          link.c                        link.o                        ln                            
+ln.c                          ln.o                          local.mk                      logname                       
+logname.c                     logname.o                     longlong.h                    ls                            
+ls-dir.c                      ls-dir.o                      ls-ls.c                       ls-ls.o                       
+ls-vdir.c                     ls-vdir.o                     ls.c                          ls.h                          
+ls.o                          make-prime-list               make-prime-list.c             make-prime-list.o             
+md5sum                        md5sum.c                      mkdir                         mkdir.c                       
+mkdir.o                       mkfifo                        mkfifo.c                      mkfifo.o                      
+mknod                         mknod.c                       mknod.o                       mktemp                        
+mktemp.c                      mktemp.o                      mv                            mv.c                          
+mv.o                          nice                          nice.c                        nice.o                        
+nl                            nl.c                          nl.o                          nohup                         
+nohup.c                       nohup.o                       nproc                         nproc.c                       
+nproc.o                       numfmt                        numfmt.c                      numfmt.o                      
+od                            od.c                          od.o                          omfg.c                        
+operand2sig.c                 operand2sig.h                 operand2sig.o                 paste                         
+paste.c                       paste.o                       pathchk                       pathchk.c                     
+pathchk.o                     pinky                         pinky.c                       pinky.o                       
+pr                            pr.c                          pr.o                          primes.h                      
+printenv                      printenv.c                    printenv.o                    printf                        
+printf.c                      printf.o                      prog-fprintf.c                prog-fprintf.h                
+prog-fprintf.o                ptx                           ptx.c                         ptx.o                         
+pwd                           pwd.c                         pwd.o                         readlink                      
+readlink.c                    readlink.o                    realpath                      realpath.c                    
+realpath.o                    relpath.c                     relpath.h                     relpath.o                     
+remove.c                      remove.h                      remove.o                      rm                            
+rm.c                          rm.o                          rmdir                         rmdir.c                       
+rmdir.o                       runcon                        runcon.c                      runcon.o                      
+selinux.c                     selinux.h                     selinux.o                     seq                           
+seq.c                         seq.o                         sha1sum                       sha224sum                     
+sha256sum                     sha384sum                     sha512sum                     shred                         
+shred.c                       shred.o                       shuf                          shuf.c                        
+shuf.o                        single-binary.mk              sleep                         sleep.c                       
+sleep.o                       sort                          sort.c                        sort.o                        
+split                         split.c                       split.o                       src_ginstall-copy.o           
+src_ginstall-cp-hash.o        src_ginstall-extent-scan.o    src_ginstall-install.o        src_ginstall-prog-fprintf.o   
+src_ginstall-selinux.o        src_libstdbuf_so-libstdbuf.o  src_md5sum-md5sum.o           src_sha1sum-md5sum.o          
+src_sha224sum-md5sum.o        src_sha256sum-md5sum.o        src_sha384sum-md5sum.o        src_sha512sum-md5sum.o        
+stat                          stat.c                        stat.o                        stdbuf                        
+stdbuf.c                      stdbuf.o                      stty                          stty.c                        
+stty.o                        sum                           sum.c                         sum.o                         
+sync                          sync.c                        sync.o                        system.h                      
+tac                           tac-pipe.c                    tac.c                         tac.o                         
+tail                          tail.c                        tail.o                        tee                           
+tee.c                         tee.o                         test                          test.c                        
+test.o                        timeout                       timeout.c                     timeout.o                     
+touch                         touch.c                       touch.o                       tr                            
+tr.c                          tr.o                          true                          true.c                        
+true.o                        truncate                      truncate.c                    truncate.o                    
+tsort                         tsort.c                       tsort.o                       tty                           
+tty.c                         tty.o                         uname                         uname-arch.c                  
+uname-uname.c                 uname-uname.o                 uname.c                       uname.h                       
+uname.o                       unexpand                      unexpand.c                    unexpand.o                    
+uniq                          uniq.c                        uniq.o                        unlink                        
+unlink.c                      unlink.o                      uptime                        uptime.c                      
+uptime.o                      users                         users.c                       users.o                       
+vdir                          version.c                     version.h                     version.o                     
+wc                            wc.c                          wc.o                          who                           
+who.c                         who.o                         whoami                        whoami.c                      
+whoami.o                      yes                           yes.c                         yes.o                         
+[                             
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests:
+chgrp                    chmod                    chown                    Coreutils.pm             
+cp                       CuSkip.pm                CuTmpdir.pm              dd                       
+df                       du                       d_type-check             envvar-check             
+factor                   fiemap-capable           filefrag-extent-compare  fmt                      
+GNUmakefile              id                       init.sh                  install                  
+lang-default             ln                       local.mk                 ls                       
+misc                     mkdir                    mv                       no-perl                  
+other-fs-tmpdir          pr                       readlink                 rm                       
+rmdir                    sample-test              split                    tail-2                   
+touch                    
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/chgrp:
+basic.sh             default-no-deref.sh  deref.sh             no-x.sh              
+posix-H.sh           recurse.sh           
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/chmod:
+c-option.sh       equal-x.sh        equals.sh         inaccessible.sh   
+no-x.sh           octal.sh          setgid.sh         silent.sh         
+thru-dangling.sh  umask-x.sh        usage.sh          
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/chown:
+basic.sh          deref.sh          preserve-root.sh  separator.sh      
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/cp:
+abuse.sh                acl.sh                  attr-existing.sh        backup-1.sh             
+backup-dir.sh           backup-is-src.sh        capability.sh           cp-a-selinux.sh         
+cp-deref.sh             cp-HL.sh                cp-i.sh                 cp-mv-backup.sh         
+cp-mv-enotsup-xattr.sh  cp-parents.sh           deref-slink.sh          dir-rm-dest.sh          
+dir-slash.sh            dir-vs-file.sh          existing-perm-dir.sh    existing-perm-race.sh   
+fail-perm.sh            fiemap-2.sh             fiemap-empty.sh         fiemap-FMR.sh           
+fiemap-perf.sh          file-perm-race.sh       into-self.sh            link-deref.sh           
+link-heap.sh            link-no-deref.sh        link-preserve.sh        link-symlink.sh         
+link.sh                 nfs-removal-race.sh     no-ctx.sh               no-deref-link1.sh       
+no-deref-link2.sh       no-deref-link3.sh       parent-perm-race.sh     parent-perm.sh          
+perm.sh                 preserve-2.sh           preserve-gid.sh         preserve-link.sh        
+preserve-mode.sh        preserve-slink-time.sh  proc-short-read.sh      proc-zero-len.sh        
+r-vs-symlink.sh         reflink-auto.sh         reflink-perm.sh         same-file.sh            
+slink-2-slink.sh        sparse-fiemap.sh        sparse-to-pipe.sh       sparse.sh               
+special-bits.sh         special-f.sh            src-base-dot.sh         symlink-slash.sh        
+thru-dangling.sh        
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/dd:
+ascii.sh                bytes.sh                direct.sh               misc.sh                 
+no-allocate.sh          nocache.sh              not-rewound.sh          reblock.sh              
+skip-seek-past-dev.sh   skip-seek-past-file.sh  skip-seek.pl            skip-seek2.sh           
+sparse.sh               stderr.sh               unblock-sync.sh         unblock.pl              
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/df:
+df-output.sh          df-P.sh               df-symlink.sh         header.sh             
+no-mtab-status.sh     over-mount-device.sh  problematic-chars.sh  skip-duplicates.sh    
+skip-rootfs.sh        total-unprocessed.sh  total-verify.sh       unreadable.sh         
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/du:
+2g.sh                         8gb.sh                        basic.sh                      bigtime.sh                    
+bind-mount-dir-cycle.sh       deref-args.sh                 deref.sh                      exclude.sh                    
+fd-leak.sh                    files0-from-dir.sh            files0-from.pl                hard-link.sh                  
+inacc-dest.sh                 inacc-dir.sh                  inaccessible-cwd.sh           inodes.sh                     
+long-from-unreadable.sh       long-sloop.sh                 max-depth.sh                  move-dir-while-traversing.sh  
+no-deref.sh                   no-x.sh                       one-file-system.sh            restore-wd.sh                 
+slash.sh                      threshold.sh                  trailing-slash.sh             two-args.sh                   
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/factor:
+create-test.sh  run.sh          
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/fmt:
+base.pl         goal-option.sh  long-line.sh    
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/id:
+context.sh        gnu-zero-uids.sh  no-context.sh     setgid.sh         
+smack.sh          uid.sh            zero.sh           
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/install:
+basic-1.sh            create-leading.sh     d-slashdot.sh         install-C-root.sh     
+install-C-selinux.sh  install-C.sh          strip-program.sh      trap.sh               
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/ln:
+backup-1.sh                          hard-backup.sh                       hard-to-sym.sh                       misc.sh                              
+relative.sh                          sf-1.sh                              slash-decorated-nonexistent-dest.sh  target-1.sh                          
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/ls:
+abmon-align.sh               block-size.sh                capability.sh                color-clear-to-eol.sh        
+color-dtype-dir.sh           color-norm.sh                color-term.sh                dangle.sh                    
+dired.sh                     file-type.sh                 follow-slink.sh              getxattr-speedup.sh          
+infloop.sh                   inode.sh                     m-option.sh                  multihardlink.sh             
+nameless-uid.sh              no-arg.sh                    no-cap.sh                    proc-selinux-segfault.sh     
+readdir-mountpoint-inode.sh  recursive.sh                 root-rel-symlink-color.sh    rt-1.sh                      
+slink-acl.sh                 stat-dtype.sh                stat-failed.sh               stat-free-color.sh           
+stat-free-symlinks.sh        stat-vs-dirent.sh            symlink-slash.sh             time-style-diag.sh           
+x-option.sh                  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/misc:
+arch.sh                        base64.pl                      basename.pl                    cat-buf.sh                     
+cat-proc.sh                    chcon-fail.sh                  chcon.sh                       chroot-credentials.sh          
+chroot-fail.sh                 close-stdout.sh                comm.pl                        coreutils.sh                   
+csplit-1000.sh                 csplit-heap.sh                 csplit-suppress-matched.pl     csplit.sh                      
+cut-huge-range.sh              cut.pl                         date-next-dow.pl               date-sec.sh                    
+date.pl                        dircolors.pl                   dirname.pl                     env-null.sh                    
+env.sh                         expand.pl                      expr.pl                        factor.pl                      
+false-status.sh                fold.pl                        groups-dash.sh                 groups-version.sh              
+head-c.sh                      head-elide-tail.pl             head-pos.sh                    head-write-error.sh            
+head.pl                        help-version.sh                invalid-opt.pl                 join.pl                        
+ls-misc.pl                     ls-time.sh                     md5sum-bsd.sh                  md5sum-newline.pl              
+md5sum-parallel.sh             md5sum.pl                      mknod.sh                       mktemp.pl                      
+nice-fail.sh                   nice.sh                        nl.sh                          nohup.sh                       
+nproc-avail.sh                 nproc-positive.sh              numfmt.pl                      od-endian.sh                   
+od-float.sh                    od-multiple-t.sh               od-N.sh                        od-x8.sh                       
+od.pl                          paste.pl                       pathchk1.sh                    printenv.sh                    
+printf-cov.pl                  printf-hex.sh                  printf-surprise.sh             printf.sh                      
+ptx-overrun.sh                 ptx.pl                         pwd-long.sh                    pwd-option.sh                  
+readlink-fp-loop.sh            readlink-root.sh               realpath.sh                    runcon-no-reorder.sh           
+selinux.sh                     seq-long-double.sh             seq.pl                         sha1sum-vec.pl                 
+sha1sum.pl                     sha224sum.pl                   sha256sum.pl                   sha384sum.pl                   
+sha512sum.pl                   shred-exact.sh                 shred-negative.sh              shred-passes.sh                
+shred-remove.sh                shuf-reservoir.sh              shuf.sh                        sort-benchmark-random.sh       
+sort-compress-hang.sh          sort-compress-proc.sh          sort-compress.sh               sort-continue.sh               
+sort-debug-keys.sh             sort-debug-warn.sh             sort-discrim.sh                sort-exit-early.sh             
+sort-files0-from.pl            sort-float.sh                  sort-merge-fdlimit.sh          sort-merge.pl                  
+sort-month.sh                  sort-NaN-infloop.sh            sort-rand.sh                   sort-spinlock-abuse.sh         
+sort-stale-thread-mem.sh       sort-u-FMR.sh                  sort-unique-segv.sh            sort-unique.sh                 
+sort-version.sh                sort.pl                        stat-birthtime.sh              stat-fmt.sh                    
+stat-hyphen.sh                 stat-mount.sh                  stat-nanoseconds.sh            stat-printf.pl                 
+stat-slash.sh                  stdbuf.sh                      stty-invalid.sh                stty-pairs.sh                  
+stty-row-col.sh                stty.sh                        sum-sysv.sh                    sum.pl                         
+tac-2-nonseekable.sh           tac-continue.sh                tac.pl                         tail.pl                        
+tee-dash.sh                    tee.sh                         test-diag.pl                   test.pl                        
+timeout-blocked.pl             timeout-group.sh               timeout-parameters.sh          timeout.sh                     
+tr-case-class.sh               tr.pl                          truncate-dangling-symlink.sh   truncate-dir-fail.sh           
+truncate-fail-diag.sh          truncate-fifo.sh               truncate-no-create-missing.sh  truncate-overflow.sh           
+truncate-owned-by-other.sh     truncate-parameters.sh         truncate-relative.sh           tsort.pl                       
+tty-eof.pl                     unexpand.pl                    uniq-perf.sh                   uniq.pl                        
+wc-files0-from.pl              wc-files0.sh                   wc-parallel.sh                 wc.pl                          
+xattr.sh                       xstrtol.pl                     
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/mkdir:
+p-1.sh                      p-2.sh                      p-3.sh                      p-acl.sh                    
+p-slashdot.sh               p-thru-slink.sh             p-v.sh                      parents.sh                  
+perm.sh                     restorecon.sh               selinux.sh                  smack-no-root.sh            
+smack-root.sh               special-1.sh                t-slash.sh                  writable-under-readonly.sh  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/mv:
+acl.sh                            atomic.sh                         atomic2.sh                        backup-dir.sh                     
+backup-is-src.sh                  childproof.sh                     diag.sh                           dir-file.sh                       
+dir2dir.sh                        dup-source.sh                     force.sh                          hard-2.sh                         
+hard-3.sh                         hard-4.sh                         hard-link-1.sh                    hard-verbose.sh                   
+i-1.pl                            i-2.sh                            i-3.sh                            i-4.sh                            
+i-5.sh                            i-link-no.sh                      into-self-2.sh                    into-self-3.sh                    
+into-self-4.sh                    into-self.sh                      leak-fd.sh                        mv-n.sh                           
+mv-special-1.sh                   no-target-dir.sh                  part-fail.sh                      part-hardlink.sh                  
+part-rename.sh                    part-symlink.sh                   partition-perm.sh                 perm-1.sh                         
+sticky-to-xpart.sh                symlink-onto-hardlink-to-self.sh  symlink-onto-hardlink.sh          to-symlink.sh                     
+trailing-slash.sh                 update.sh                         
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/pr:
+0F              0FF             0FFnt           0FFt            
+0FnFnt          0FnFt           0Fnt            0Ft             
+2-Sf-t_notab    2-S_f-t_notab   2f-t_notab      2sf-t_notab     
+2sw60f-t_notab  2s_f-t_notab    2s_w60f-t_nota  2w60f-t_notab   
+3-0F            3-5l24f-t       3-FF            3a2l17-FF       
+3a3f-0F         3a3l15-t        3a3l15f-t       3b2l17-FF       
+3b3f-0F         3b3f-0FF        3b3f-FF         3b3l15-t        
+3b3l15f-t       3f-0F           3f-FF           3l24-t          
+3l24f-t         3ml24-FF        3ml24-t         3ml24-t-FF      
+3ml24f-t        4-7l24-FF       4l24-FF         a2l15-FF        
+a2l17-FF        a3-0F           a3f-0F          a3f-0FF         
+a3f-FF          a3l15-t         a3l15f-t        a3l24f-lm       
+b2l15-FF        b2l17-FF        b3-0F           b3f-0F          
+b3f-0FF         b3f-FF          b3l15-t         b3l15f-t        
+b3l24f-lm       FF              FFn             FFtn            
+FnFn            Ja3l24f-lm      Jb3l24f-lm      Jml24f-lm-lo    
+l24-FF          l24-t           l24f-t          loli            
+ml20-FF-t       ml24-FF         ml24-t          ml24-t-FF       
+ml24f-0F        ml24f-lm-lo     ml24f-t         ml24f-t-0F      
+n+2-5l24f-0FF   n+2l24f-0FF     n+2l24f-bl      n+3-7l24-FF     
+n+3l24f-0FF     n+3l24f-bl      n+3ml20f-bl-FF  n+3ml24f-bl-tn  
+n+3ml24f-tn-bl  n+4-8a2l17-FF   n+4b2l17f-0FF   n+5-8b3l17f-FF  
+n+5a3l13f-0FF   n+6a2l17-FF     n+6b3l13f-FF    n+7l24-FF       
+n+8l20-FF       nJml24f-lmlmlo  nJml24f-lmlolm  nl24f-bl        
+nN1+3l24f-bl    nN15l24f-bl     nSml20-bl-FF    nSml20-t-t-FF   
+nSml20-t-tFFFF  nSml24-bl-FF    nSml24-t-t-FF   nSml24-t-tFFFF  
+o3a3l24f-tn     o3a3Sl24f-tn    o3a3Snl24f-tn   o3b3l24f-tn     
+o3b3Sl24f-tn    o3b3Snl24f-tn   o3Jml24f-lm-lo  o3ml24f-bl-tn   
+o3mSl24f-bl-tn  o3mSnl24fbltn   pr-tests.pl     t-0FF           
+t-bl            t-FF            t-t             ta3-0FF         
+ta3-FF          tb3-0FF         tb3-FF          tFFn            
+tFFt            tFFt-bl         tFFt-ll         tFFt-lm         
+tFnFt           tn              tn2e5o3-t_tab   tn2e8-t_tab     
+tn2e8o3-t_tab   tne8-t_tab      tne8o3-t_tab    tn_2e8-t_tab    
+tn_2e8S-t_tab   tt-0FF          tt-bl           tt-FF           
+tt-t            tta3-0FF        tta3-FF         ttb3-0FF        
+ttb3-FF         t_notab         t_tab           t_tab_          
+W-72l24f-ll     W20l24f-ll      W26l24f-ll      W27l24f-ll      
+W28l24f-ll      W35a3l24f-lm    W35b3l24f-lm    W35Ja3l24f-lm   
+W35Jb3l24f-lm   W35Jml24f-lmlo  W35ml24f-lm-lo  W72Jl24f-ll     
+w72l24f-ll      
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/readlink:
+can-e.sh  can-f.sh  can-m.sh  multi.sh  
+rl-1.sh   
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/rm:
+cycle.sh                    d-1.sh                      d-2.sh                      d-3.sh                      
+dangling-symlink.sh         deep-1.sh                   deep-2.sh                   dir-no-w.sh                 
+dir-nonrecur.sh             dot-rel.sh                  empty-inacc.sh              empty-name.pl               
+ext3-perf.sh                f-1.sh                      fail-2eperm.sh              fail-eacces.sh              
+fail-eperm.xpl              hash.sh                     i-1.sh                      i-never.sh                  
+i-no-r.sh                   ignorable.sh                inaccessible.sh             interactive-always.sh       
+interactive-once.sh         ir-1.sh                     isatty.sh                   many-dir-entries-vs-OOM.sh  
+no-give-up.sh               one-file-system.sh          one-file-system2.sh         r-1.sh                      
+r-2.sh                      r-3.sh                      r-4.sh                      r-root.sh                   
+read-only.sh                readdir-bug.sh              rm1.sh                      rm2.sh                      
+rm3.sh                      rm4.sh                      rm5.sh                      sunos-1.sh                  
+unread2.sh                  unread3.sh                  unreadable.pl               v-slash.sh                  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/rmdir:
+fail-perm.sh  ignore.sh     t-slash.sh    
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/split:
+additional-suffix.sh   b-chunk.sh             fail.sh                filter.sh              
+guard-input.sh         l-chunk.sh             line-bytes.sh          lines.sh               
+numeric.sh             r-chunk.sh             suffix-auto-length.sh  suffix-length.sh       
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/tail-2:
+append-only.sh          assert-2.sh             assert.sh               big-4gb.sh              
+F-vs-missing.sh         F-vs-rename.sh          flush-initial.sh        follow-name.sh          
+follow-stdin.sh         infloop-1.sh            inotify-hash-abuse.sh   inotify-hash-abuse2.sh  
+inotify-race.sh         inotify-rotate.sh       pid.sh                  pipe-f.sh               
+pipe-f2.sh              proc-ksyms.sh           retry.sh                start-middle.sh         
+symlink.sh              tail-n0f.sh             wait.sh                 
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab3-gdb/coreutils-8.23/tests/touch:
+60-seconds.sh          dangling-symlink.sh    dir-1.sh               empty-file.sh          
+fail-diag.sh           fifo.sh                no-create-missing.sh   no-dereference.sh      
+no-rights.sh           not-owner.sh           now-owned-by-other.sh  obsolescent.sh         
+read-only.sh           relative.sh            trailing-slash.sh      
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab4-cstring:
+grade      lab-stl    README.md  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab4-cstring/lab-stl:
+README.md  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab5-cp:
+grade      README.md  Timer.h    
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab6-signal:
+grade      README.md  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab7-rm:
+grade      README.md  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/lab/lab8-spam:
+grade      README.md  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/linux:
+grade      README.md  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/quiz:
+quiz0  quiz1  quiz2  quiz3  
+quiz4  quiz5  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/quiz/quiz0:
+grade            unixhistory.tex  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/quiz/quiz1:
+grade              quiz1-gitunix.tex  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/quiz/quiz2:
+grade      README.md  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/quiz/quiz3:
+grade       sizeof.tex  
+
+/home/csmajs/amyll001/ucr-cs100/assignments/quiz/quiz4:
+bitwise.tex  grade        
+
+/home/csmajs/amyll001/ucr-cs100/assignments/quiz/quiz5:
+grade  
+
+/home/csmajs/amyll001/ucr-cs100/lecture:
+exec.cpp       exec2.cpp      exit.cpp       fail.cpp       
+fib.cpp        filemanip.cpp  gdb.cpp        lecture1       
+lecture1b      lecture2       lecture4       lecture4b      
+lecture5       lecture6       lecture7       Makefile       
+open.cpp       out            quizres.cpp    rshell         
+testfile       typescript     
+
+/home/csmajs/amyll001/ucr-cs100/lecture/rshell:
+
+/home/csmajs/amyll001/ucr-cs100/people:
+instructors  students     
+
+/home/csmajs/amyll001/ucr-cs100/people/instructors:
+mike@izbicki.me     README.md           tkim049@cs.ucr.edu  
+
+/home/csmajs/amyll001/ucr-cs100/people/students:
+aaven004  abarb014  achao008  afan004   
+ahsu013   amacp001  amyll001  aorti017  
+asand017  atan009   atost001  atran046  
+bbenn003  bchen022  bleon001  ccoll010  
+cmanj001  dgoer001  dngo010   dpham008  
+drami025  emull005  fvera002  gliu016   
+gruiz007  hchu007   hfanc001  hgarc014  
+hlao002   hray001   htsai010  ifuka001  
+ihund001  jbarb011  jfan013   jholl013  
+jmaw001   jmoon018  jreye028  jstod001  
+karai001  kchan039  khigu001  khuan013  
+kkamg001  kle016    llope039  lpeng003  
+lxu003    mxu008    nkesa001  nlapr001  
+nsark002  ogonz007  palva002  pstar001  
+rdinh002  rheng001  rluk001   rtran012  
+sjin010   teloy001  tglen002  tliu020   
+vdoan002  yli082    zeman001  
+
+/home/csmajs/amyll001/ucr-cs100/scripts:
+addgrader.sh                      allgrades.sh                      calcgrade.sh                      checksyscalls.sh                  
+config.sh                         gradeassignment-all-different.sh  gradeassignment-all-same.sh       gradeassignment-individual.sh     
+install-instructor-keys.sh        moss                              moss.sh                           moss.tgz                          
+rmcomments.sh                     
+
+/home/csmajs/amyll001/ucr-cs100/scripts/moss:
+moss      moss.txt  moss_run  source    
+
+/home/csmajs/amyll001/ucr-cs100/scripts/moss/source:
+moss_script          moss_script_example  
+
+/home/csmajs/amyll001/ucr-cs100/tutorials:
+shell-tricks  syscalls      valgrind      
+
+/home/csmajs/amyll001/ucr-cs100/tutorials/shell-tricks:
+README.md  
+
+/home/csmajs/amyll001/ucr-cs100/tutorials/syscalls:
+README.md  
+
+/home/csmajs/amyll001/ucr-cs100/tutorials/valgrind:
+example1.cpp  example2.cpp  README.md     
+
+/home/csmajs/amyll001/Videos:
+
+~/cs100/rshell/bin
+amyll001@hammer $ lsk -R /home/csmajs/amyll001 [1P[4ha[4l[4hl[4l
+drwx------ 49  amyll001 csmajs   12288 Nov 11 21:39 .
+drwx--x--x 1241 root root  200704 Nov 10 13:28 ..
+drwx------ 4   amyll001 csmajs    4096 Oct 24 09:14 .adobe
+-rw------- 1   amyll001 csmajs    1270 Sep 19 16:48 .bashrc
+-rwx------ 1   amyll001 csmajs     940 Nov 11 21:59 .bash_history
+-rw------- 1   amyll001 csmajs      24 Sep 19 16:48 .bash_logout
+drwx------ 3   amyll001 csmajs    4096 Jan  8 08:38 .cache
+drwx------ 7   amyll001 csmajs    4096 Apr  1 11:12 .config
+drwx------ 3   amyll001 csmajs    4096 Sep 30 11:07 .dbus
+srwxrwxrwx 1   amyll001 csmajs      62 Oct 10 12:06 .DCOPserver_well.cs.ucr.edu_localhost:12 -> 
+srwxrwxrwx 1   amyll001 csmajs      62 Nov  1 01:12 .DCOPserver_well.cs.ucr.edu_localhost:13 -> 
+srwxrwxrwx 1   amyll001 csmajs      62 Nov  5 08:49 .DCOPserver_well.cs.ucr.edu_localhost:14 -> 
+srwxrwxrwx 1   amyll001 csmajs      62 Oct 18 15:20 .DCOPserver_well.cs.ucr.edu_localhost:15 -> 
+srwxrwxrwx 1   amyll001 csmajs      62 Nov  5 00:15 .DCOPserver_well.cs.ucr.edu_localhost:16 -> 
+srwxrwxrwx 1   amyll001 csmajs      62 Oct 25 14:40 .DCOPserver_well.cs.ucr.edu_localhost:22 -> 
+srwxrwxrwx 1   amyll001 csmajs      62 Nov  5 19:48 .DCOPserver_well.cs.ucr.edu_localhost:24 -> 
+srwxrwxrwx 1   amyll001 csmajs      62 Nov  1 12:43 .DCOPserver_well.cs.ucr.edu_localhost:25 -> 
+srwxrwxrwx 1   amyll001 csmajs      62 Oct 31 18:01 .DCOPserver_well.cs.ucr.edu_localhost:35 -> 
+-rw------- 1   amyll001 csmajs      64 Oct 10 12:06 .DCOPserver_well.cs.ucr.edu_localhost_12
+-rw------- 1   amyll001 csmajs      64 Nov  1 01:12 .DCOPserver_well.cs.ucr.edu_localhost_13
+-rw------- 1   amyll001 csmajs      64 Nov  5 08:49 .DCOPserver_well.cs.ucr.edu_localhost_14
+-rw------- 1   amyll001 csmajs      64 Oct 18 15:20 .DCOPserver_well.cs.ucr.edu_localhost_15
+-rw------- 1   amyll001 csmajs      64 Nov  5 12:03 .DCOPserver_well.cs.ucr.edu_localhost_16
+-rw------- 1   amyll001 csmajs      64 Oct 25 14:40 .DCOPserver_well.cs.ucr.edu_localhost_22
+-rw------- 1   amyll001 csmajs      64 Nov  5 19:48 .DCOPserver_well.cs.ucr.edu_localhost_24
+-rw------- 1   amyll001 csmajs      64 Nov  1 12:43 .DCOPserver_well.cs.ucr.edu_localhost_25
+-rw------- 1   amyll001 csmajs      64 Oct 31 18:01 .DCOPserver_well.cs.ucr.edu_localhost_35
+-rwx------ 1   amyll001 csmajs      27 Jun  3 11:10 .dmrc
+drwx------ 2   amyll001 csmajs    4096 Sep 27 11:16 .eggcups
+-rwx------ 1   amyll001 csmajs    4096 Oct 24 09:10 .execooo1zKihb
+-rwx------ 1   amyll001 csmajs    4096 Oct 24 09:10 .execooodevr2g
+-rwx------ 1   amyll001 csmajs    4096 Oct 24 09:10 .execoooe4AYhb
+-rwx------ 1   amyll001 csmajs    4096 Oct 24 09:10 .execoooeO6pQg
+-rwx------ 1   amyll001 csmajs    4096 Oct 24 09:10 .execoooGDLZo8
+-rwx------ 1   amyll001 csmajs    4096 Oct 24 09:10 .execoooqRmQRB
+-rwx------ 1   amyll001 csmajs    4096 Oct 24 09:10 .execoooVFWde8
+drwx------ 2   amyll001 csmajs    8192 Jun  8 21:23 .fontconfig
+drwx------ 4   amyll001 csmajs    4096 Jun  8 21:23 .gconf
+drwx------ 2   amyll001 csmajs    4096 Jun  8 23:52 .gconfd
+drwx------ 3   amyll001 csmajs    4096 Sep 27 11:16 .gnome
+drwx------ 8   amyll001 csmajs    4096 Oct 24 12:39 .gnome2
+drwx------ 2   amyll001 csmajs    4096 Sep 27 11:16 .gnome2_private
+drwx------ 3   amyll001 csmajs    4096 Sep 30 11:07 .gnote
+drwx------ 2   amyll001 csmajs    4096 Jun  8 21:23 .gnupg
+-rwx------ 1   amyll001 csmajs     233 Apr  1 11:29 .goutputstream-01ORDX
+-rwx------ 1   amyll001 csmajs     271 Apr  1 12:44 .goutputstream-1KVIDX
+-rwx------ 1   amyll001 csmajs     539 Apr 29 11:47 .goutputstream-1ZVKEX
+-rwx------ 1   amyll001 csmajs      86 Apr  1 11:53 .goutputstream-4V1ODX
+-rwx------ 1   amyll001 csmajs      85 Apr  1 12:39 .goutputstream-6DKFDX
+-rwx------ 1   amyll001 csmajs     316 Apr  1 12:05 .goutputstream-6JXMDX
+-rwx------ 1   amyll001 csmajs     490 Apr  1 11:47 .goutputstream-AYSFDX
+-rwx------ 1   amyll001 csmajs     428 Apr  1 12:11 .goutputstream-C39HDX
+-rwx------ 1   amyll001 csmajs     490 Apr  1 11:46 .goutputstream-F3LQDX
+-rwx------ 1   amyll001 csmajs     273 Apr  1 12:23 .goutputstream-F6CFDX
+-rwx------ 1   amyll001 csmajs     280 Apr  1 13:57 .goutputstream-FZHCDX
+-rwx------ 1   amyll001 csmajs     335 Apr  1 11:38 .goutputstream-GK2PDX
+-rwx------ 1   amyll001 csmajs     234 Apr  1 12:15 .goutputstream-IZPDDX
+-rwx------ 1   amyll001 csmajs     276 Apr  1 12:21 .goutputstream-JMJMDX
+-rwx------ 1   amyll001 csmajs    2628 Apr 29 11:49 .goutputstream-K0BOEX
+-rwx------ 1   amyll001 csmajs     346 Apr  1 12:09 .goutputstream-K5EQDX
+-rwx------ 1   amyll001 csmajs     469 Apr  1 11:50 .goutputstream-KA6PDX
+-rwx------ 1   amyll001 csmajs     361 Apr  1 11:40 .goutputstream-OOLTDX
+-rwx------ 1   amyll001 csmajs      99 Apr  1 11:14 .goutputstream-QWFQDX
+-rwx------ 1   amyll001 csmajs     101 Apr  1 11:16 .goutputstream-SGB9CX
+-rwx------ 1   amyll001 csmajs     426 Apr  1 12:11 .goutputstream-XIDJDX
+-rwx------ 1   amyll001 csmajs     334 Apr  1 11:37 .goutputstream-YQCRDX
+drwx------ 2   amyll001 csmajs    4096 Jun  8 21:23 .gstreamer-0.10
+-rwx------ 1   amyll001 csmajs     187 Jun  8 21:23 .gtk-bookmarks
+-rwx------ 1   amyll001 csmajs      97 Sep 27 11:16 .gtkrc-1.2-gnome2
+drwx------ 2   amyll001 csmajs    4096 Sep 30 11:07 .gvfs
+-rw------- 1   amyll001 csmajs    9496 Nov  5 21:01 .ICEauthority
+-rwx------ 1   amyll001 csmajs     657 Jun  8 21:23 .imsettings.log
+drwx------ 3   amyll001 csmajs    4096 Oct 15 22:34 .kde
+drwx------ 3   amyll001 csmajs    4096 Sep 30 11:07 .local
+drwx------ 3   amyll001 csmajs    4096 Sep 27 11:39 .macromedia
+drwx------ 3   amyll001 csmajs    4096 Sep 27 11:16 .metacity
+drwx------ 4   amyll001 csmajs    4096 Sep 27 11:16 .mozilla
+drwx------ 3   amyll001 csmajs    4096 Sep 27 11:16 .nautilus
+drwx------ 3   amyll001 csmajs    4096 Sep 30 11:11 .nv
+drwx------ 3   amyll001 csmajs    4096 Oct 24 09:10 .openoffice.org
+drwx------ 3   amyll001 csmajs    4096 Oct 21 22:24 .pki
+-rwx------ 1   amyll001 csmajs      88 Sep 22 15:44 .procmailrc
+-rw------- 1   amyll001 csmajs     965 Sep 19 16:49 .profile
+drwx------ 2   amyll001 csmajs    4096 Sep 30 11:07 .pulse
+-rwx------ 1   amyll001 csmajs     256 Sep 30 11:07 .pulse-cookie
+drwx------ 2   amyll001 csmajs    4096 Nov  5 21:01 .qt
+-rwx------ 1   amyll001 csmajs    6111 Jun  8 23:51 .recently-used.xbel
+drwx------ 3   amyll001 csmajs    4096 Sep 27 11:16 .redhat
+drwx------ 2   amyll001 csmajs    4096 Oct 31 12:09 .ssh
+drwx------ 2   amyll001 csmajs    4096 Jan 29 09:15 .Trash
+drwx------ 2   amyll001 csmajs    4096 Oct 27 11:47 .vim
+-rwx------ 1   amyll001 csmajs   14678 Nov 11 21:39 .viminfo
+-rw------- 1   amyll001 csmajs    1478 Nov 11 21:32 .Xauthority
+-rwx------ 1   amyll001 csmajs  812307 Jun  8 21:23 .xsession-errors
+-rwx------ 1   amyll001 csmajs 11240734 May 27 11:30 .xsession-errors.old
+drwx------ 7   amyll001 csmajs    4096 Nov  5 16:02 assembly01
+-rwx------ 1   amyll001 csmajs   91914 Oct 31 11:18 assignments-backup3wPJyh
+-rwx------ 1   amyll001 csmajs   91914 Oct 31 12:03 assignments-backupecOrwk
+-rwx------ 1   amyll001 csmajs   91914 Oct 31 12:07 assignments-backupneuFqB
+-rw-r--r-- 1   amyll001 csmajs   19532 Nov  2 19:00 atteResume.odt
+drwx------ 6   amyll001 csmajs    4096 Nov 11 21:33 cs100
+drwx------ 3   amyll001 csmajs    8192 May 20 12:07 Desktop
+drwx------ 2   amyll001 csmajs    4096 Apr 29 11:50 Documents
+drwx------ 3   amyll001 csmajs    4096 Jun  3 13:27 Downloads
+-rwx------ 1   amyll001 csmajs     280 Apr  1 13:58 function.cpp
+drwx------ 6   amyll001 csmajs    4096 Jan 21 16:46 install
+drwx------ 2   amyll001 csmajs    4096 Apr  1 13:30 lab1
+drwx------ 2   amyll001 csmajs   20480 Apr 15 13:49 lab2
+drwx------ 2   amyll001 csmajs    8192 Apr 29 13:57 lab5
+drwx------ 2   amyll001 csmajs    4096 Sep 30 11:07 Music
+-rwx------ 1   amyll001 csmajs     469 Apr  1 13:05 oddInt.cpp
+drwx------ 2   amyll001 csmajs    4096 Sep 30 11:07 Pictures
+drwx------ 2   amyll001 csmajs    4096 Sep 30 11:07 Public
+drwx------ 3   amyll001 csmajs    4096 Jan 21 16:17 sdl
+drwx------ 3   amyll001 csmajs    4096 Oct 21 22:24 shell
+-rwx------ 1   amyll001 csmajs     273 Apr  1 13:05 switch.cpp
+drwx------ 2   amyll001 csmajs    4096 Sep 30 11:07 Templates
+-rwx------ 1   amyll001 csmajs     398 Oct 31 12:09 tmpFf_cDy
+drwx------ 8   amyll001 csmajs    4096 Oct 27 12:38 ucr-cs100
+drwx------ 2   amyll001 csmajs    4096 Sep 30 11:07 Videos
+-rw------- 1   amyll001 csmajs      27 Oct 20 11:40 vimrc
+~/cs100/rshell/bin
+amyll001@hammer $ lsk[K[K[Kpwd[K[K[Klsk l[K-a -l
+drwx------ 2   amyll001 csmajs    4096 Nov 11 22:00 .
+drwx------ 6   amyll001 csmajs    4096 Nov 11 21:54 ..
+-rw------- 1   amyll001 csmajs  163840 Nov 11 22:03 ls.script
+-rwx------ 1   amyll001 csmajs   59551 Nov 11 21:39 lsk
+~/cs100/rshell/bin
+amyll001@hammer $ lsk -la
+drwx------ 2   amyll001 csmajs    4096 Nov 11 22:00 .
+drwx------ 6   amyll001 csmajs    4096 Nov 11 21:54 ..
+-rw------- 1   amyll001 csmajs  163840 Nov 11 22:03 ls.script
+-rwx------ 1   amyll001 csmajs   59551 Nov 11 21:39 lsk
+~/cs100/rshell/bin
+amyll001@hammer $ lsk -aL
+.          ..         ls.script  lsk        
+~/cs100/rshell/bin
+amyll001@hammer $ lsk -l -a
+drwx------ 2   amyll001 csmajs    4096 Nov 11 22:00 .
+drwx------ 6   amyll001 csmajs    4096 Nov 11 21:54 ..
+-rw------- 1   amyll001 csmajs  163840 Nov 11 22:03 ls.script
+-rwx------ 1   amyll001 csmajs   59551 Nov 11 21:39 lsk
+~/cs100/rshell/bin
+amyll001@hammer $ lsk -l -a -r[KR
+.:
+drwx------ 2   amyll001 csmajs    4096 Nov 11 22:00 .
+drwx------ 6   amyll001 csmajs    4096 Nov 11 21:54 ..
+-rw------- 1   amyll001 csmajs  163840 Nov 11 22:03 ls.script
+-rwx------ 1   amyll001 csmajs   59551 Nov 11 21:39 lsk
+~/cs100/rshell/bin
+amyll001@hammer $ lsk -l -a -R[Kr
+Invalid expression
+~/cs100/rshell/bin
+amyll001@hammer $ lsk -l -a -r[K[K/home
+drwxr-xr-x 3   root root       0 Nov 11 08:58 .
+dr-xr-xr-x 27  root root    4096 Nov  9 11:11 ..
+drwx--x--x 1241 root root  200704 Nov 10 13:28 csmajs
+~/cs100/rshell/bin
+amyll001@hammer $ lsk lsk
+There was an error with readdir() : Not a directory
+~/cs100/rshell/bin
+amyll001@hammer $ lsk -a -a
+.          ..         ls.script  lsk        
+~/cs100/rshell/bin
+amyll001@hammer $ lsk -a -a -l
+drwx------ 2   amyll001 csmajs    4096 Nov 11 22:00 .
+drwx------ 6   amyll001 csmajs    4096 Nov 11 21:54 ..
+-rw------- 1   amyll001 csmajs  163840 Nov 11 22:03 ls.script
+-rwx------ 1   amyll001 csmajs   59551 Nov 11 21:39 lsk
+~/cs100/rshell/bin
+amyll001@hammer $ lsk /home -al
+/home:
+csmajs  
+
+-al:
+There was an error with readdir() : No such file or directory
+~/cs100/rshell/bin
+amyll001@hammer $ lsk /home -al[C[K[K[K[4h-[4l[4ha[4l[4hl[4l[4h [4l
+drwxr-xr-x 3   root root       0 Nov 11 08:58 .
+dr-xr-xr-x 27  root root    4096 Nov  9 11:11 ..
+drwx--x--x 1241 root root  200704 Nov 10 13:28 csmajs
+~/cs100/rshell/bin
+amyll001@hammer $ lsk -al /home [C[4h [4l[4h-[4l
+Invalid expression
+~/cs100/rshell/bin
+amyll001@hammer $ lsk
+ls.script  lsk        
+~/cs100/rshell/bin
+amyll001@hammer $ exit
+exit
+
+Script done on Tue 11 Nov 2014 10:07:12 PM PST
